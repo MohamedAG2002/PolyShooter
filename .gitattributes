@@ -5,3 +5,4 @@
 * linguist-vendored
 *.cpp linguist-language=C++
 *.h linguist-language=C++
+build/* linguist-generated=true
