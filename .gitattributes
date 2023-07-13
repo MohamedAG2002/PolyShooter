@@ -4,3 +4,4 @@
 # Just look at the cpp and hpp files
 *.cpp linguist-language=C++
 *.h linguist-language=C++
+build/Makefile linguist-generated=true
