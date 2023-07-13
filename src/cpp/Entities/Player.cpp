@@ -32,7 +32,7 @@ void Player::ProcessInput(SDL_Event event)
   {
     case SDL_KEYDOWN:
       if(event.key.keysym.sym == SDLK_SPACE)
-        EventManager::Get().DispatchSpawnEvent("Bullet", Vec2(position.x, position.y - size.y));
+        EventManager::Get().DispatchSpawnEvent("Bullet", Vec2(position.x, position.y));
       break; 
   }
 

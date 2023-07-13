@@ -2294,7 +2294,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o: ../src/cpp/Managers/Asset
 CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o: ../src/cpp/Managers/EntityManager.cpp \
   /usr/include/stdc-predef.h \
   ../src/header/Managers/EntityManager.h \
-  ../src/header/Entities/Entity.h \
+  ../src/header/Entities/Player.h \
   ../src/header/Core/Vec2.h \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -2457,6 +2457,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o: ../src/cpp/Managers/Enti
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  ../src/header/Entities/Entity.h \
   ../external/include/SDL2/SDL.h \
   ../external/include/SDL2/SDL_main.h \
   ../external/include/SDL2/SDL_stdinc.h \
@@ -2622,22 +2623,21 @@ CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o: ../src/cpp/Managers/Enti
   ../external/include/SDL2/SDL_version.h \
   ../external/include/SDL2/SDL_locale.h \
   ../external/include/SDL2/SDL_misc.h \
+  ../src/header/Entities/Bullet.h \
+  ../src/header/Core/Color.h \
   ../external/include/SDL2/SDL.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/cstddef \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -2716,12 +2716,16 @@ CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o: ../src/cpp/Managers/Enti
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   ../src/header/Managers/EventManager.h \
   ../src/header/Enums/SceneType.h \
-  ../src/header/Entities/Player.h \
-  ../src/header/Entities/Bullet.h \
-  ../src/header/Core/Color.h \
-  ../src/header/Constants.h
+  ../src/header/Constants.h \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc
 
 CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o: ../src/cpp/Managers/EventManager.cpp \
   /usr/include/stdc-predef.h \
@@ -3513,8 +3517,11 @@ CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o: ../src/cpp/Managers/Scene
   ../external/include/SDL2/SDL.h \
   ../src/header/Scenes/GameScene.h \
   ../src/header/Managers/EntityManager.h \
+  ../src/header/Entities/Player.h \
   ../src/header/Entities/Entity.h \
+  ../src/header/Entities/Bullet.h \
   ../external/include/SDL2/SDL.h \
+  /usr/include/c++/11/cstddef \
   ../src/header/Scenes/OverScene.h \
   ../src/header/Managers/EventManager.h
 
@@ -3856,23 +3863,22 @@ CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o: ../src/cpp/Scenes/GameScene.cp
   ../external/include/SDL2/SDL_ttf.h \
   ../external/include/SDL2/SDL.h \
   ../src/header/Managers/EntityManager.h \
+  ../src/header/Entities/Player.h \
   ../src/header/Entities/Entity.h \
+  ../src/header/Entities/Bullet.h \
   ../external/include/SDL2/SDL.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/cstddef \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -3951,6 +3957,10 @@ CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o: ../src/cpp/Scenes/GameScene.cp
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   ../src/header/Managers/EventManager.h \
   ../src/header/Enums/SceneType.h
 
@@ -5865,6 +5875,8 @@ CMakeFiles/ps.dir/src/cpp/main.cpp.o: ../src/cpp/main.cpp \
 /usr/include/c++/11/bits/exception_ptr.h:
 
 /usr/include/c++/11/ostream:
+
+/usr/include/c++/11/cstddef:
 
 /usr/include/c++/11/bits/stl_vector.h:
 

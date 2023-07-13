@@ -13,7 +13,7 @@ const float BULLET_SPEED = 400.0f;
 class Bullet : public Entity
 {
   public:
-    Bullet(float posX, float posY);
+    Bullet(float posX, float posY, bool active);
 
   public:
     Vec2 velocity, size;

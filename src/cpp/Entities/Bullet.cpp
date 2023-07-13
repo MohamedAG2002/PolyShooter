@@ -6,15 +6,15 @@
 
 namespace ps { // beginnning of ps
 
-Bullet::Bullet(float posX, float posY)
+Bullet::Bullet(float posX, float posY, bool active)
 {
   // Inherited members
   position = Vec2(posX, posY);
   id = "Bullet";
-  isActive = true;
+  isActive = active;
 
   // Own members
-  velocity = Vec2(0.0f, BULLET_SPEED);
+  velocity = Vec2(0.0f, -BULLET_SPEED);
   size = Vec2(16.0f, 16.0f);
   texture = AssetManager::Get().GetSprite("Bullet");
 }
@@ -26,9 +26,12 @@ void Bullet::ProcessInput(SDL_Event event)
 
 void Bullet::Update(float dt)
 {
-  // Deactivate when outside of the window
-  if(position.x < -20)
+  // Deactivate and stay off-screen when going outside of the window
+  if(position.y < 0)
+  {
+    position = Vec2(-30.0f, -30.0f);
     isActive = false;
+  }
 
   position += velocity * dt;
 }
