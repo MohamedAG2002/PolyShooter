@@ -30,6 +30,3 @@
 *.exe
 *.out
 *.app
-
-# Ignoring .c files
-*.c
