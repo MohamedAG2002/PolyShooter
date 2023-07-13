@@ -5,3 +5,5 @@
 #* linguist-vendored
 *.cpp linguist-detectable=true
 *.h linguist-detectable=true
+*Makefile linguist-detectable=false
+*.cmake linguist-detectable=false
