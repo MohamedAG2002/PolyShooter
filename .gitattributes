@@ -2,6 +2,6 @@
 * text=auto
 
 # Just look at the cpp and hpp files
-#* linguist-vendored
+* linguist-vendored
 *.cpp linguist-vendored=false
 *.h linguist-vendored=false
