@@ -2,9 +2,6 @@
 * text=auto
 
 # Just look at the cpp and hpp files
-#* linguist-vendored
-*.cpp linguist-detectable=true
-*.h linguist-detectable=true
-*.d linguist-detectable=false
-*.make linguist-detectable=false
-*.cmake linguist-detectable=false
+* linguist-vendored
+*.cpp linguist-vendored=true
+*.h linguist-vendored=true
