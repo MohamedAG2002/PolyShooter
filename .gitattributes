@@ -5,5 +5,4 @@
 * linguist-vendored
 *.cpp linguist-vendored=false
 *.h linguist-vendored=false
-*.c linguist-vendored=true
-* build/* linguist-vendored=true
+* build/*.c linguist-vendored=true
