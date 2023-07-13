@@ -2,7 +2,5 @@
 * text=auto
 
 # Just look at the cpp and hpp files
-* linguist-vendored
 *.cpp linguist-language=C++
 *.h linguist-language=C++
-build/* linguist-generated=true
