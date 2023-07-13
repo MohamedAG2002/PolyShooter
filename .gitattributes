@@ -3,5 +3,5 @@
 
 # Just look at the cpp and hpp files
 * linguist-vendored
-*.cpp linguist-vendored=true
-*.h linguist-vendored=true
+*.cpp linguist-vendored=false
+*.h linguist-vendored=false
