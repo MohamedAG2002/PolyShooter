@@ -306,6 +306,7 @@ CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Scenes/../Managers/EntityManager.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Scenes/../Managers/../Entities/Player.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Scenes/../Managers/../Entities/../Core/Timer.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Scenes/../Managers/../Entities/Entity.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Scenes/../Managers/../Entities/Bullet.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \

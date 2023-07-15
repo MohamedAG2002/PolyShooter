@@ -20,6 +20,7 @@ set(SOURCES
   # Core
   src/cpp/Core/Vec2.cpp
   src/cpp/Core/Color.cpp
+  src/cpp/Core/Timer.cpp
 
   # Entities 
   src/cpp/Entities/Entity.cpp

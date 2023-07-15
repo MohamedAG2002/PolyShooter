@@ -166,6 +166,10 @@ CMakeFiles/ps.dir/src/cpp/Core/Color.cpp.o: ../src/cpp/Core/Color.cpp \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc
 
+CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o: ../src/cpp/Core/Timer.cpp \
+  /usr/include/stdc-predef.h \
+  ../src/header/Core/Timer.h
+
 CMakeFiles/ps.dir/src/cpp/Core/Vec2.cpp.o: ../src/cpp/Core/Vec2.cpp \
   /usr/include/stdc-predef.h \
   ../src/header/Core/Vec2.h \
@@ -1208,6 +1212,7 @@ CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o: ../src/cpp/Entities/Player.cpp 
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  ../src/header/Core/Timer.h \
   ../src/header/Entities/Entity.h \
   ../external/include/SDL2/SDL.h \
   ../external/include/SDL2/SDL_main.h \
@@ -2457,6 +2462,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o: ../src/cpp/Managers/Enti
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  ../src/header/Core/Timer.h \
   ../src/header/Entities/Entity.h \
   ../external/include/SDL2/SDL.h \
   ../external/include/SDL2/SDL_main.h \
@@ -3518,6 +3524,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o: ../src/cpp/Managers/Scene
   ../src/header/Scenes/GameScene.h \
   ../src/header/Managers/EntityManager.h \
   ../src/header/Entities/Player.h \
+  ../src/header/Core/Timer.h \
   ../src/header/Entities/Entity.h \
   ../src/header/Entities/Bullet.h \
   ../external/include/SDL2/SDL.h \
@@ -3864,6 +3871,7 @@ CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o: ../src/cpp/Scenes/GameScene.cp
   ../external/include/SDL2/SDL.h \
   ../src/header/Managers/EntityManager.h \
   ../src/header/Entities/Player.h \
+  ../src/header/Core/Timer.h \
   ../src/header/Entities/Entity.h \
   ../src/header/Entities/Bullet.h \
   ../external/include/SDL2/SDL.h \
@@ -5842,8 +5850,6 @@ CMakeFiles/ps.dir/src/cpp/main.cpp.o: ../src/cpp/main.cpp \
 
 ../src/header/Enums/SceneType.h:
 
-../src/header/Constants.h:
-
 ../src/cpp/Entities/Player.cpp:
 
 /usr/include/c++/11/bits/istream.tcc:
@@ -6158,6 +6164,10 @@ CMakeFiles/ps.dir/src/cpp/main.cpp.o: ../src/cpp/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
+../src/header/Constants.h:
+
+../src/header/Core/Timer.h:
+
 ../external/include/SDL2/SDL_atomic.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
@@ -6392,8 +6402,6 @@ CMakeFiles/ps.dir/src/cpp/main.cpp.o: ../src/cpp/main.cpp \
 
 /usr/include/c++/11/bits/iterator_concepts.h:
 
-../src/cpp/Core/Vec2.cpp:
-
 /usr/include/c++/11/bits/erase_if.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h:
@@ -6517,6 +6525,10 @@ CMakeFiles/ps.dir/src/cpp/main.cpp.o: ../src/cpp/main.cpp \
 /usr/include/c++/11/bits/charconv.h:
 
 /usr/include/c++/11/bits/basic_string.tcc:
+
+../src/cpp/Core/Vec2.cpp:
+
+../src/cpp/Core/Timer.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
@@ -6688,6 +6700,6 @@ CMakeFiles/ps.dir/src/cpp/main.cpp.o: ../src/cpp/main.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h:

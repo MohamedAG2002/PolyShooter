@@ -24,6 +24,8 @@ Player::Player(float posX, float posY)
   size = Vec2(32.0f, 32.0f);
   health = PLYR_MAX_HEALTH;
   texture = AssetManager::Get().GetSprite("Player");
+  m_cooldownTimer.Start();
+  m_canShoot = true;
 } 
 
 void Player::ProcessInput(SDL_Event event)
@@ -31,8 +33,11 @@ void Player::ProcessInput(SDL_Event event)
   switch(event.type)
   {
     case SDL_KEYDOWN:
-      if(event.key.keysym.sym == SDLK_SPACE)
+      if(event.key.keysym.sym == SDLK_SPACE && m_canShoot)
+      {
+        m_canShoot = false;
         EventManager::Get().DispatchSpawnEvent("Bullet", Vec2(position.x, position.y));
+      }
       break; 
   }
 
@@ -49,10 +54,17 @@ void Player::ProcessInput(SDL_Event event)
 
 void Player::Update(float dt)
 {
+  // Counting the timer
+  m_cooldownTimer.Update(dt);
+
+  if(m_cooldownTimer.hasRunOut)
+    m_canShoot = true;
+  
   position += velocity * dt;
 
   // Restricting player's movements inside the borders
   position.x = utls::ClampF(position.x, 0, consts::SCREEN_WIDTH - size.x);
+
 }
 
 void Player::Render(SDL_Renderer* renderer)

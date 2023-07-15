@@ -141,6 +141,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/../Entities/../Core/Timer.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/../Entities/Entity.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_main.h \

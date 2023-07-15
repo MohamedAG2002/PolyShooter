@@ -153,6 +153,30 @@ src/cpp/Core/Color.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Core/Color.cpp.s
 .PHONY : src/cpp/Core/Color.cpp.s
 
+src/cpp/Core/Timer.o: src/cpp/Core/Timer.cpp.o
+.PHONY : src/cpp/Core/Timer.o
+
+# target to build an object file
+src/cpp/Core/Timer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o
+.PHONY : src/cpp/Core/Timer.cpp.o
+
+src/cpp/Core/Timer.i: src/cpp/Core/Timer.cpp.i
+.PHONY : src/cpp/Core/Timer.i
+
+# target to preprocess a source file
+src/cpp/Core/Timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.i
+.PHONY : src/cpp/Core/Timer.cpp.i
+
+src/cpp/Core/Timer.s: src/cpp/Core/Timer.cpp.s
+.PHONY : src/cpp/Core/Timer.s
+
+# target to generate assembly for a file
+src/cpp/Core/Timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.s
+.PHONY : src/cpp/Core/Timer.cpp.s
+
 src/cpp/Core/Vec2.o: src/cpp/Core/Vec2.cpp.o
 .PHONY : src/cpp/Core/Vec2.o
 
@@ -525,6 +549,9 @@ help:
 	@echo "... src/cpp/Core/Color.o"
 	@echo "... src/cpp/Core/Color.i"
 	@echo "... src/cpp/Core/Color.s"
+	@echo "... src/cpp/Core/Timer.o"
+	@echo "... src/cpp/Core/Timer.i"
+	@echo "... src/cpp/Core/Timer.s"
 	@echo "... src/cpp/Core/Vec2.o"
 	@echo "... src/cpp/Core/Vec2.i"
 	@echo "... src/cpp/Core/Vec2.s"

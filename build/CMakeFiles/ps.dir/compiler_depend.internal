@@ -167,6 +167,11 @@ CMakeFiles/ps.dir/src/cpp/Core/Color.cpp.o
  /usr/include/c++/11/bits/charconv.h
  /usr/include/c++/11/bits/basic_string.tcc
 
+CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Core/Timer.cpp
+ /usr/include/stdc-predef.h
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Core/Timer.h
+
 CMakeFiles/ps.dir/src/cpp/Core/Vec2.cpp.o
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Core/Vec2.cpp
  /usr/include/stdc-predef.h
@@ -1213,6 +1218,7 @@ CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h
  /usr/include/c++/11/bits/charconv.h
  /usr/include/c++/11/bits/basic_string.tcc
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Core/Timer.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Entities/Entity.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_main.h
@@ -2465,6 +2471,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h
  /usr/include/c++/11/bits/charconv.h
  /usr/include/c++/11/bits/basic_string.tcc
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Core/Timer.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Entities/Entity.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_main.h
@@ -3528,6 +3535,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Scenes/GameScene.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Managers/EntityManager.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Entities/Player.h
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Core/Timer.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Entities/Entity.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Entities/Bullet.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h
@@ -3875,6 +3883,7 @@ CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Managers/EntityManager.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Entities/Player.h
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Core/Timer.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Entities/Entity.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/header/Entities/Bullet.h
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h

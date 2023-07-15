@@ -125,10 +125,24 @@ CMakeFiles/ps.dir/src/cpp/Core/Color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ps.dir/src/cpp/Core/Color.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Core/Color.cpp -o CMakeFiles/ps.dir/src/cpp/Core/Color.cpp.s
 
+CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o: CMakeFiles/ps.dir/flags.make
+CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o: ../src/cpp/Core/Timer.cpp
+CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o -MF CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Core/Timer.cpp
+
+CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Core/Timer.cpp > CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.i
+
+CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Core/Timer.cpp -o CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.s
+
 CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o: CMakeFiles/ps.dir/flags.make
 CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o: ../src/cpp/Entities/Entity.cpp
 CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o -MF CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/Entity.cpp
 
 CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.s: cmake_force
 CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o: CMakeFiles/ps.dir/flags.make
 CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o: ../src/cpp/Entities/Player.cpp
 CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o -MF CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/Player.cpp
 
 CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.s: cmake_force
 CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.o: CMakeFiles/ps.dir/flags.make
 CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.o: ../src/cpp/Entities/Bullet.cpp
 CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.o -MF CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/Bullet.cpp
 
 CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.s: cmake_force
 CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.o: CMakeFiles/ps.dir/flags.make
 CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.o: ../src/cpp/Scenes/MenuScene.cpp
 CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.o -MF CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/MenuScene.cpp
 
 CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.s: cmake_force
 CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o: CMakeFiles/ps.dir/flags.make
 CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o: ../src/cpp/Scenes/GameScene.cpp
 CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o -MF CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/GameScene.cpp
 
 CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.s: cmake_force
 CMakeFiles/ps.dir/src/cpp/Scenes/OverScene.cpp.o: CMakeFiles/ps.dir/flags.make
 CMakeFiles/ps.dir/src/cpp/Scenes/OverScene.cpp.o: ../src/cpp/Scenes/OverScene.cpp
 CMakeFiles/ps.dir/src/cpp/Scenes/OverScene.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ps.dir/src/cpp/Scenes/OverScene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ps.dir/src/cpp/Scenes/OverScene.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/Scenes/OverScene.cpp.o -MF CMakeFiles/ps.dir/src/cpp/Scenes/OverScene.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/Scenes/OverScene.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/OverScene.cpp
 
 CMakeFiles/ps.dir/src/cpp/Scenes/OverScene.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/ps.dir/src/cpp/Scenes/OverScene.cpp.s: cmake_force
 CMakeFiles/ps.dir/src/cpp/UI/Text.cpp.o: CMakeFiles/ps.dir/flags.make
 CMakeFiles/ps.dir/src/cpp/UI/Text.cpp.o: ../src/cpp/UI/Text.cpp
 CMakeFiles/ps.dir/src/cpp/UI/Text.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ps.dir/src/cpp/UI/Text.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ps.dir/src/cpp/UI/Text.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/UI/Text.cpp.o -MF CMakeFiles/ps.dir/src/cpp/UI/Text.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/UI/Text.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/UI/Text.cpp
 
 CMakeFiles/ps.dir/src/cpp/UI/Text.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/ps.dir/src/cpp/UI/Text.cpp.s: cmake_force
 CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o: CMakeFiles/ps.dir/flags.make
 CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o: ../src/cpp/Managers/SceneManager.cpp
 CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o -MF CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/SceneManager.cpp
 
 CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.s: cmake_force
 CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o: CMakeFiles/ps.dir/flags.make
 CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o: ../src/cpp/Managers/EventManager.cpp
 CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o -MF CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/EventManager.cpp
 
 CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.s: cmake_force
 CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o: CMakeFiles/ps.dir/flags.make
 CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o: ../src/cpp/Managers/AssetManager.cpp
 CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o -MF CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/AssetManager.cpp
 
 CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.s: cmake_force
 CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o: CMakeFiles/ps.dir/flags.make
 CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o: ../src/cpp/Managers/EntityManager.cpp
 CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o -MF CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/EntityManager.cpp
 
 CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.s: cmake_force
 CMakeFiles/ps.dir/src/cpp/Utls.cpp.o: CMakeFiles/ps.dir/flags.make
 CMakeFiles/ps.dir/src/cpp/Utls.cpp.o: ../src/cpp/Utls.cpp
 CMakeFiles/ps.dir/src/cpp/Utls.cpp.o: CMakeFiles/ps.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ps.dir/src/cpp/Utls.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ps.dir/src/cpp/Utls.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps.dir/src/cpp/Utls.cpp.o -MF CMakeFiles/ps.dir/src/cpp/Utls.cpp.o.d -o CMakeFiles/ps.dir/src/cpp/Utls.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Utls.cpp
 
 CMakeFiles/ps.dir/src/cpp/Utls.cpp.i: cmake_force
@@ -299,6 +313,7 @@ ps_OBJECTS = \
 "CMakeFiles/ps.dir/src/cpp/Game.cpp.o" \
 "CMakeFiles/ps.dir/src/cpp/Core/Vec2.cpp.o" \
 "CMakeFiles/ps.dir/src/cpp/Core/Color.cpp.o" \
+"CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o" \
 "CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o" \
 "CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o" \
 "CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.o" \
@@ -319,6 +334,7 @@ ps: CMakeFiles/ps.dir/src/cpp/main.cpp.o
 ps: CMakeFiles/ps.dir/src/cpp/Game.cpp.o
 ps: CMakeFiles/ps.dir/src/cpp/Core/Vec2.cpp.o
 ps: CMakeFiles/ps.dir/src/cpp/Core/Color.cpp.o
+ps: CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o
 ps: CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o
 ps: CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o
 ps: CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.o
@@ -336,7 +352,7 @@ ps: ../external/lib/libSDL2_image-2.0.so.0.600.3
 ps: ../external/lib/libSDL2_ttf-2.0.so.0.2000.2
 ps: ../external/lib/libSDL2-2.0.so.0.2800.1
 ps: CMakeFiles/ps.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable ps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable ps"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ps.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

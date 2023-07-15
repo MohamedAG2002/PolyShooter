@@ -382,6 +382,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/GameScene.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/EntityManager.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/Player.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/../Core/Timer.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/Entity.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/Bullet.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \

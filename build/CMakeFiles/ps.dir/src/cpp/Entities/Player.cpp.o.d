@@ -140,6 +140,7 @@ CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/../../header/Entities/../Core/Timer.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/../../header/Entities/Entity.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_main.h \

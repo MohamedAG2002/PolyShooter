@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ps.dir/src/cpp/Core/Color.cpp.o"
   "CMakeFiles/ps.dir/src/cpp/Core/Color.cpp.o.d"
+  "CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o"
+  "CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Core/Vec2.cpp.o"
   "CMakeFiles/ps.dir/src/cpp/Core/Vec2.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.o"

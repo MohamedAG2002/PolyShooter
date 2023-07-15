@@ -21,6 +21,11 @@
 },
 {
   "directory": "/home/mohamed/Dev/C++/SDL/PolyShooter/build",
+  "command": "/usr/bin/c++  -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2 -std=gnu++20 -o CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Core/Timer.cpp",
+  "file": "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Core/Timer.cpp"
+},
+{
+  "directory": "/home/mohamed/Dev/C++/SDL/PolyShooter/build",
   "command": "/usr/bin/c++  -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2 -std=gnu++20 -o CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/Entity.cpp",
   "file": "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/Entity.cpp"
 },
