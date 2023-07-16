@@ -9,6 +9,7 @@ namespace utls { // beginning of utls
 
 float ClampF(float value, float min, float max);
 bool IsKeyDown(SDL_Scancode key);
+int GetRandom(int min, int max);
 
 } // end of utls
 

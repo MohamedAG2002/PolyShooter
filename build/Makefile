@@ -225,6 +225,30 @@ src/cpp/Entities/Bullet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Entities/Bullet.cpp.s
 .PHONY : src/cpp/Entities/Bullet.cpp.s
 
+src/cpp/Entities/Enemy.o: src/cpp/Entities/Enemy.cpp.o
+.PHONY : src/cpp/Entities/Enemy.o
+
+# target to build an object file
+src/cpp/Entities/Enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Entities/Enemy.cpp.o
+.PHONY : src/cpp/Entities/Enemy.cpp.o
+
+src/cpp/Entities/Enemy.i: src/cpp/Entities/Enemy.cpp.i
+.PHONY : src/cpp/Entities/Enemy.i
+
+# target to preprocess a source file
+src/cpp/Entities/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Entities/Enemy.cpp.i
+.PHONY : src/cpp/Entities/Enemy.cpp.i
+
+src/cpp/Entities/Enemy.s: src/cpp/Entities/Enemy.cpp.s
+.PHONY : src/cpp/Entities/Enemy.s
+
+# target to generate assembly for a file
+src/cpp/Entities/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Entities/Enemy.cpp.s
+.PHONY : src/cpp/Entities/Enemy.cpp.s
+
 src/cpp/Entities/Entity.o: src/cpp/Entities/Entity.cpp.o
 .PHONY : src/cpp/Entities/Entity.o
 
@@ -393,6 +417,30 @@ src/cpp/Managers/SceneManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.s
 .PHONY : src/cpp/Managers/SceneManager.cpp.s
 
+src/cpp/Managers/SpawnManager.o: src/cpp/Managers/SpawnManager.cpp.o
+.PHONY : src/cpp/Managers/SpawnManager.o
+
+# target to build an object file
+src/cpp/Managers/SpawnManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Managers/SpawnManager.cpp.o
+.PHONY : src/cpp/Managers/SpawnManager.cpp.o
+
+src/cpp/Managers/SpawnManager.i: src/cpp/Managers/SpawnManager.cpp.i
+.PHONY : src/cpp/Managers/SpawnManager.i
+
+# target to preprocess a source file
+src/cpp/Managers/SpawnManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Managers/SpawnManager.cpp.i
+.PHONY : src/cpp/Managers/SpawnManager.cpp.i
+
+src/cpp/Managers/SpawnManager.s: src/cpp/Managers/SpawnManager.cpp.s
+.PHONY : src/cpp/Managers/SpawnManager.s
+
+# target to generate assembly for a file
+src/cpp/Managers/SpawnManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Managers/SpawnManager.cpp.s
+.PHONY : src/cpp/Managers/SpawnManager.cpp.s
+
 src/cpp/Scenes/GameScene.o: src/cpp/Scenes/GameScene.cpp.o
 .PHONY : src/cpp/Scenes/GameScene.o
 
@@ -558,6 +606,9 @@ help:
 	@echo "... src/cpp/Entities/Bullet.o"
 	@echo "... src/cpp/Entities/Bullet.i"
 	@echo "... src/cpp/Entities/Bullet.s"
+	@echo "... src/cpp/Entities/Enemy.o"
+	@echo "... src/cpp/Entities/Enemy.i"
+	@echo "... src/cpp/Entities/Enemy.s"
 	@echo "... src/cpp/Entities/Entity.o"
 	@echo "... src/cpp/Entities/Entity.i"
 	@echo "... src/cpp/Entities/Entity.s"
@@ -579,6 +630,9 @@ help:
 	@echo "... src/cpp/Managers/SceneManager.o"
 	@echo "... src/cpp/Managers/SceneManager.i"
 	@echo "... src/cpp/Managers/SceneManager.s"
+	@echo "... src/cpp/Managers/SpawnManager.o"
+	@echo "... src/cpp/Managers/SpawnManager.i"
+	@echo "... src/cpp/Managers/SpawnManager.s"
 	@echo "... src/cpp/Scenes/GameScene.o"
 	@echo "... src/cpp/Scenes/GameScene.i"
 	@echo "... src/cpp/Scenes/GameScene.s"

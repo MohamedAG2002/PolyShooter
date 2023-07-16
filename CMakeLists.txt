@@ -26,6 +26,7 @@ set(SOURCES
   src/cpp/Entities/Entity.cpp
   src/cpp/Entities/Player.cpp
   src/cpp/Entities/Bullet.cpp
+  src/cpp/Entities/Enemy.cpp
 
   # Scenes 
   src/cpp/Scenes/MenuScene.cpp
@@ -40,6 +41,7 @@ set(SOURCES
   src/cpp/Managers/EventManager.cpp
   src/cpp/Managers/AssetManager.cpp
   src/cpp/Managers/EntityManager.cpp
+  src/cpp/Managers/SpawnManager.cpp
 
   # Utls
   src/cpp/Utls.cpp

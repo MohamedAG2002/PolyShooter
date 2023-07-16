@@ -55,7 +55,7 @@ void Player::ProcessInput(SDL_Event event)
 void Player::Update(float dt)
 {
   // Counting the timer
-  m_cooldownTimer.Update(dt);
+  m_cooldownTimer.Update();
 
   if(m_cooldownTimer.hasRunOut)
     m_canShoot = true;

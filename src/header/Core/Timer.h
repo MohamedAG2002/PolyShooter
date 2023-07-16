@@ -14,7 +14,7 @@ class Timer
 
   public:
     void Start();
-    void Update(float dt);
+    void Update();
 
   private:
     float m_timer;

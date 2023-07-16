@@ -5,6 +5,8 @@
 #include <SDL_scancode.h>
 #include <SDL_stdinc.h>
 
+#include <random>
+
 namespace ps { // beginning of ps
 
 namespace utls { // beginning of utls
@@ -23,6 +25,14 @@ bool IsKeyDown(SDL_Scancode key)
 {
   const Uint8* keys = SDL_GetKeyboardState(NULL);
   return keys[key];
+}
+
+int GetRandom(int min, int max)
+{
+  std::random_device rndDevice;
+  std::default_random_engine rndEngine(rndDevice());
+  std::uniform_int_distribution<int> uniformDist(min, max);
+  return uniformDist(rndEngine);
 }
 
 } // end of utls

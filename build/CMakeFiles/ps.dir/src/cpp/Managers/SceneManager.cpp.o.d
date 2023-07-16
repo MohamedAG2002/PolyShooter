@@ -386,6 +386,8 @@ CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/Entity.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/Bullet.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/Enemy.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Managers/SpawnManager.h \
  /usr/include/c++/11/cstddef \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/OverScene.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/EventManager.h

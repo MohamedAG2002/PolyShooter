@@ -24,12 +24,11 @@ void Timer::Start()
   m_hasStarted = true;
 }
 
-void Timer::Update(float dt)
+void Timer::Update()
 {
   if(!m_hasStarted)
     return;
   
-  // Count the timer based on the delta time
   m_timer += 1;
 
   // If the timer ran out

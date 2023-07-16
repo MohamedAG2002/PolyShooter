@@ -2,13 +2,15 @@
 
 #include "../Entities/Player.h"
 #include "../Entities/Bullet.h"
+#include "../Entities/Enemy.h"
 #include "../Core/Vec2.h"
+#include "../Managers/SpawnManager.h"
 
 #include <SDL.h>
 
 #include <cstddef>
 #include <string>
-#include <array>
+#include <vector>
 #include <memory>
 #include <functional>
 
@@ -34,12 +36,15 @@ class EntityManager
 
   private:
     std::shared_ptr<Player> m_player;
-    std::array<std::shared_ptr<Bullet>, MAX_BULLETS> m_bullets;
-    // TODO: Add enemies array
-    //std::array<std::shared_ptr<Enemy>, MAX_BULLETS> m_enemies;
-    
+    std::vector<std::shared_ptr<Bullet>> m_bullets = std::vector<std::shared_ptr<Bullet>>(MAX_BULLETS);   
+    std::vector<std::shared_ptr<Enemy>> m_enemies = std::vector<std::shared_ptr<Enemy>>(MAX_ENEMIES);   
+    SpawnManager m_spawnMgr;
+
   private:
+    template<typename T>
+    void m_SpawnEntity(const std::vector<std::shared_ptr<T>>& entities, const Vec2& pos);
     void m_SpawnBullet(const Vec2& pos);
+    void m_SpawnEnemy(const Vec2& pos);
 };
 
 } // end of ps
