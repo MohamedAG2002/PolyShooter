@@ -13,7 +13,7 @@ namespace ps {
 class GameScene : public Scene
 {
   public:
-    GameScene(int& score);
+    GameScene();
 
   public:
     void ProcessInputs(SDL_Event event);
@@ -24,7 +24,7 @@ class GameScene : public Scene
   private:
     // Managers
     std::unique_ptr<EntityManager> m_enttMgr;
-   
+    
     std::unique_ptr<Text> m_healthText, m_scoreText, m_pauseText, m_toMenuText;
     bool m_isPaused;
 };

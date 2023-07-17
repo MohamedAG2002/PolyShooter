@@ -2,8 +2,13 @@
 #include "../../header/Managers/EventManager.h"
 #include "../../header/Enums/EventType.h"
 
+#include <memory>
+
 namespace ps { // beginning of ps
- 
+
+// Extern variable init
+std::unique_ptr<ScoreManager> g_scrMgr;
+
 ScoreManager::ScoreManager()
 {
   score = 0;

@@ -390,4 +390,5 @@ CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o: \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Managers/EventManager.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Managers/../Enums/SceneType.h
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Managers/../Enums/SceneType.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Managers/ScoreManager.h

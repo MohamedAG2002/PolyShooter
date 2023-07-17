@@ -32,7 +32,6 @@ Player::Player(float posX, float posY)
   // Lambda implementation
   m_collCallback = [&](EventType et) {
     health -= 1;
-    // Potentially, disable the collider for a couple of seconds
   };
 
   // Listening to events

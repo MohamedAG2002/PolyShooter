@@ -21,7 +21,8 @@ class Text
 
   public:
     std::string text;
-    Vec2 position;
+    Anchor anchor;
+    Vec2 offset;
     Color color;
     TTF_Font* font = nullptr;
     SDL_Surface* textSurface = nullptr;
@@ -30,9 +31,10 @@ class Text
 
   public:
     void Render(SDL_Renderer* renderer);
+    void ChangeText(std::string&& newText);
 
   private:
-    SDL_Color m_PSColorToSDLColor();
+    Vec2 m_position;
     Vec2 m_AnchorToVec2(const Anchor anchor, Vec2& offset);
     TTF_Font* m_TypeToFont(const TextType type);
 };

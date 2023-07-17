@@ -245,8 +245,6 @@ CMakeFiles/ps.dir/src/cpp/Game.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_locale.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_misc.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/../header/Managers/../Enums/SceneType.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/../header/Managers/../Managers/ScoreManager.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/../header/Managers/../Managers/../Enums/EventType.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h /usr/include/c++/11/tuple \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \

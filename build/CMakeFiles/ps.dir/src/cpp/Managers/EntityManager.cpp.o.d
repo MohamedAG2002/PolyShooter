@@ -390,5 +390,6 @@ CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Constants.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Utls.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_events.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_pixels.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_scancode.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_rect.h

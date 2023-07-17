@@ -1,6 +1,8 @@
 #pragma once
 
+#include "Core/Color.h"
 #include <SDL_events.h>
+#include <SDL_pixels.h>
 #include <SDL_scancode.h>
 #include <SDL_rect.h>
 
@@ -19,6 +21,9 @@ int GetRandom(int min, int max);
 
 // Uses the Seperating Axis Theorem to check for collisions
 bool CheckSATCollision(SDL_FRect rec1, SDL_FRect rec2);
+
+// Converts the engine's own color to SDL's color
+SDL_Color PSColorToSDLColor(const Color color);
 
 } // end of utls
 

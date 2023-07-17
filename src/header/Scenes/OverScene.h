@@ -13,7 +13,7 @@ namespace ps {
 class OverScene : public Scene
 {
   public:
-    OverScene(int& score, int& highScore);
+    OverScene();
 
   public:
     void ProcessInputs(SDL_Event event);

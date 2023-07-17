@@ -1,5 +1,6 @@
 #include "../../header/Scenes/OverScene.h"
 #include "../../header/Managers/EventManager.h"
+#include "../../header/Managers/ScoreManager.h"
 #include "../../header/Enums/SceneType.h"
 #include "../../header/UI/Text.h"
 #include "../../header/Enums/Anchor.h"
@@ -14,13 +15,11 @@
 
 namespace ps { // beginning of ps
 
-OverScene::OverScene(int& score, int& highScore)
+OverScene::OverScene()
 {
   m_title = std::make_unique<Text>("YOU DIED!", Anchor::TOP_CENTER, TextType::BIG_TEXT, Color::White);
-  m_scoreText = std::make_unique<Text>("SCORE: " + std::to_string(score), 
-                                       Anchor::CENTER, TextType::MEDIUM_TEXT, Color::White);
-  m_highScoreText = std::make_unique<Text>("HIGH SCORE: " + std::to_string(highScore), 
-                                           Anchor::CENTER, TextType::MEDIUM_TEXT, Color::White, Vec2(0.0f, 50.0f));
+  m_scoreText = std::make_unique<Text>("SCORE: ", Anchor::CENTER, TextType::MEDIUM_TEXT, Color::White);
+  m_highScoreText = std::make_unique<Text>("HIGH SCORE: ", Anchor::CENTER, TextType::MEDIUM_TEXT, Color::White, Vec2(0.0f, 50.0f));
   m_replayText = std::make_unique<Text>("[R] REPLAY", Anchor::BOTTOM_LEFT, TextType::SMALL_TEXT, Color::White);
 }
 
@@ -38,7 +37,9 @@ void OverScene::ProcessInputs(SDL_Event event)
 
 void OverScene::Update(float dt)
 {
-  // Does nothing here...
+  // Update texts
+  m_scoreText->ChangeText("SCORE: " + std::to_string(g_scrMgr->score));
+  m_highScoreText->ChangeText("HIGH SCORE: " + std::to_string(g_scrMgr->highScore));
 }
 
 void OverScene::Render(SDL_Renderer* renderer)

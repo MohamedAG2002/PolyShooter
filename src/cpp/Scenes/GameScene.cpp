@@ -1,5 +1,6 @@
 #include "../../header/Scenes/GameScene.h"
 #include "../../header/Managers/EventManager.h"
+#include "../../header/Managers/ScoreManager.h"
 #include "../../header/Enums/SceneType.h"
 #include "../../header/Enums/Anchor.h"
 #include "../../header/Enums/TextType.h"
@@ -11,14 +12,12 @@
 
 namespace ps {
   
-GameScene::GameScene(int& score)
+GameScene::GameScene()
 {
   m_enttMgr = std::make_unique<EntityManager>();
   
-  m_healthText = std::make_unique<Text>("Health: " + std::to_string(m_enttMgr->player->health), 
-                                        Anchor::TOP_LEFT, TextType::MEDIUM_TEXT, Color::White);
-  m_scoreText = std::make_unique<Text>("Score: " + std::to_string(score), 
-                                       Anchor::TOP_RIGHT, TextType::MEDIUM_TEXT, Color::White);
+  m_healthText = std::make_unique<Text>("Health: ", Anchor::TOP_LEFT, TextType::MEDIUM_TEXT, Color::White);
+  m_scoreText = std::make_unique<Text>("Score: ", Anchor::TOP_RIGHT, TextType::MEDIUM_TEXT, Color::White);
   m_pauseText = std::make_unique<Text>("PAUSED", Anchor::CENTER, TextType::BIG_TEXT, Color::White);
   m_toMenuText = std::make_unique<Text>("[M] MENU", Anchor::BOTTOM_LEFT, TextType::MEDIUM_TEXT, Color::White);
 
@@ -51,6 +50,10 @@ void GameScene::Update(float dt)
   if(m_isPaused)
     return;
 
+  // Updating the texts
+  m_healthText->ChangeText("Health: " + std::to_string(m_enttMgr->player->health));
+  m_scoreText->ChangeText("Score: " + std::to_string(g_scrMgr->score));
+
   m_enttMgr->CollisionUpdate();
   m_enttMgr->Update(dt);
 }
@@ -73,6 +76,7 @@ void GameScene::Reset()
 {
   m_isPaused = false;
   m_enttMgr->Reset();
+  g_scrMgr->score = 0;
 }
 
 }

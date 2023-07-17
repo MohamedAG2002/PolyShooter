@@ -2,6 +2,7 @@
 
 #include <SDL_events.h>
 #include <SDL_keyboard.h>
+#include <SDL_pixels.h>
 #include <SDL_rect.h>
 #include <SDL_scancode.h>
 #include <SDL_stdinc.h>
@@ -50,6 +51,11 @@ bool CheckSATCollision(SDL_FRect rec1, SDL_FRect rec2)
 
   return ((leftRec1 < rightRec2) && (rightRec1 > leftRec2)) &&
          ((topRec1 < bottomRec2) && (bottomRec1 > topRec2)); 
+}
+
+SDL_Color PSColorToSDLColor(const Color color)
+{
+  return SDL_Color{color.r, color.g, color.b, color.a}; 
 }
 
 } // end of utls

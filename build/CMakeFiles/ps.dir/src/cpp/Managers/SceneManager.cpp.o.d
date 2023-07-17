@@ -244,8 +244,6 @@ CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_locale.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_misc.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/../Enums/SceneType.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/../Managers/ScoreManager.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/../Managers/../Enums/EventType.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h /usr/include/c++/11/tuple \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
@@ -386,10 +384,12 @@ CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/Player.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/../Core/Timer.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/Entity.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/../Enums/EventType.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/Bullet.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Entities/Enemy.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/../Managers/SpawnManager.h \
  /usr/include/c++/11/cstddef \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/OverScene.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/ScoreManager.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/EventManager.h

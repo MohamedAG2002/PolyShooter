@@ -318,4 +318,9 @@ CMakeFiles/ps.dir/src/cpp/UI/Text.cpp.o: \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/UI/../../header/Constants.h
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/UI/../../header/Constants.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/UI/../../header/Utls.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_events.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_pixels.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_scancode.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_rect.h

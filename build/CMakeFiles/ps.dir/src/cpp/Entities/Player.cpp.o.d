@@ -326,6 +326,7 @@ CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/../../header/Constants.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/../../header/Utls.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_events.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_pixels.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_scancode.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_rect.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/../../header/Managers/AssetManager.h \

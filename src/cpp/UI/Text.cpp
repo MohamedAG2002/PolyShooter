@@ -3,6 +3,7 @@
 #include "../../header/Core/Vec2.h"
 #include "../../header/Core/Color.h"
 #include "../../header/Constants.h"
+#include "../../header/Utls.h"
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
@@ -15,25 +16,25 @@ namespace ps { // beginning of ps
 Text::Text()
 {
   text = "Default";
-  position = Vec2{0.0f, 0.0f};
+  m_position = Vec2{0.0f, 0.0f};
   color = Color::Red;
   textRect = {0};
 }
 
 Text::Text(std::string&& text, Anchor anchor, TextType type, Color color, Vec2 offset)
-  :text(text), color(color)
+  :text(text), anchor(anchor), offset(offset), color(color)
 {
   // Checking for the size of the font
   font = m_TypeToFont(type);
 
   // Getting the surface from the font
-  textSurface = TTF_RenderText_Solid(font, text.c_str(), m_PSColorToSDLColor());
+  textSurface = TTF_RenderText_Solid(font, text.c_str(), utls::PSColorToSDLColor(color));
 
   // Defining the position based on the anchor
-  position = m_AnchorToVec2(anchor, offset); 
+  m_position = m_AnchorToVec2(anchor, offset); 
 
   // Defining the rect from the texture to render later
-  textRect = {(int)position.x, (int)position.y, textSurface->w, textSurface->h};
+  textRect = {(int)m_position.x, (int)m_position.y, textSurface->w, textSurface->h};
 }
 
 Text::~Text()
@@ -51,9 +52,13 @@ void Text::Render(SDL_Renderer* renderer)
   SDL_RenderCopy(renderer, textTexture, nullptr, &textRect);
 }
 
-SDL_Color Text::m_PSColorToSDLColor()
+void Text::ChangeText(std::string&& newText)
 {
-  return SDL_Color{color.r, color.g, color.b, color.a};
+  // Re-applying the settings from before to change the text 
+  text = newText;
+  textSurface = TTF_RenderText_Solid(font, text.c_str(), utls::PSColorToSDLColor(color));
+  m_position = m_AnchorToVec2(anchor, offset);
+  textRect = {(int)m_position.x, (int)m_position.y, textSurface->w, textSurface->h};
 }
 
 Vec2 Text::m_AnchorToVec2(const Anchor anchor, Vec2& offset)
