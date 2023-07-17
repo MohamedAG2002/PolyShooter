@@ -90,8 +90,9 @@ void Game::Update()
   // will be in milliseconds)
   deltaTime = (SDL_GetTicks() - lastFrameTime) / 1000.0;
   lastFrameTime = SDL_GetTicks();
-
+  
   m_scnMgr->Update(deltaTime);
+  m_background.Update(deltaTime);
 }
 
 void Game::Render()

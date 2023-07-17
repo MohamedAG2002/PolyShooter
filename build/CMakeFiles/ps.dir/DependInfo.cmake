@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/Enemy.cpp" "CMakeFiles/ps.dir/src/cpp/Entities/Enemy.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Entities/Enemy.cpp.o.d"
   "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/Entity.cpp" "CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o.d"
   "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/Player.cpp" "CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o.d"
+  "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/Star.cpp" "CMakeFiles/ps.dir/src/cpp/Entities/Star.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Entities/Star.cpp.o.d"
   "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Game.cpp" "CMakeFiles/ps.dir/src/cpp/Game.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Game.cpp.o.d"
   "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/AssetManager.cpp" "CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o.d"
   "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/EntityManager.cpp" "CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o.d"

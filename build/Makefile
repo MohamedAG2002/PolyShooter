@@ -321,6 +321,30 @@ src/cpp/Entities/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.s
 .PHONY : src/cpp/Entities/Player.cpp.s
 
+src/cpp/Entities/Star.o: src/cpp/Entities/Star.cpp.o
+.PHONY : src/cpp/Entities/Star.o
+
+# target to build an object file
+src/cpp/Entities/Star.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Entities/Star.cpp.o
+.PHONY : src/cpp/Entities/Star.cpp.o
+
+src/cpp/Entities/Star.i: src/cpp/Entities/Star.cpp.i
+.PHONY : src/cpp/Entities/Star.i
+
+# target to preprocess a source file
+src/cpp/Entities/Star.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Entities/Star.cpp.i
+.PHONY : src/cpp/Entities/Star.cpp.i
+
+src/cpp/Entities/Star.s: src/cpp/Entities/Star.cpp.s
+.PHONY : src/cpp/Entities/Star.s
+
+# target to generate assembly for a file
+src/cpp/Entities/Star.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Entities/Star.cpp.s
+.PHONY : src/cpp/Entities/Star.cpp.s
+
 src/cpp/Game.o: src/cpp/Game.cpp.o
 .PHONY : src/cpp/Game.o
 
@@ -666,6 +690,9 @@ help:
 	@echo "... src/cpp/Entities/Player.o"
 	@echo "... src/cpp/Entities/Player.i"
 	@echo "... src/cpp/Entities/Player.s"
+	@echo "... src/cpp/Entities/Star.o"
+	@echo "... src/cpp/Entities/Star.i"
+	@echo "... src/cpp/Entities/Star.s"
 	@echo "... src/cpp/Game.o"
 	@echo "... src/cpp/Game.i"
 	@echo "... src/cpp/Game.s"

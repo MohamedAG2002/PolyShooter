@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ps.dir/src/cpp/Entities/Entity.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o"
   "CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o.d"
+  "CMakeFiles/ps.dir/src/cpp/Entities/Star.cpp.o"
+  "CMakeFiles/ps.dir/src/cpp/Entities/Star.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Game.cpp.o"
   "CMakeFiles/ps.dir/src/cpp/Game.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o"

@@ -13,12 +13,11 @@ namespace ps { // beginning of ps
 Background::Background()
 {
   m_position = Vec2(2.0f, 2.0f);
-  m_color = Color::White;
 
   for(int i = 0; i < MAX_STARS; i++)
   {
     // Add a new star to the vector
-    m_stars.push_back(SDL_Rect{(int)m_position.x, (int)m_position.y, STAR_SIZE, STAR_SIZE}); 
+    m_stars.push_back(std::make_shared<Star>(m_position.x, m_position.y)); 
     
     // Pick two random numbers
     int randPosX = utls::GetRandom(STAR_SIZE * 2, consts::SCREEN_WIDTH - (STAR_SIZE * 2));
@@ -41,12 +40,19 @@ Background::~Background()
   m_stars.clear();
 }
 
+void Background::Update(float dt)
+{
+  for(auto star : m_stars)
+  {
+    star->Update(dt);
+  }
+}
+
 void Background::Render(SDL_Renderer* renderer)
 {
   for(auto star : m_stars)
   {
-    SDL_SetRenderDrawColor(renderer, m_color.r, m_color.g, m_color.b, m_color.a);
-    SDL_RenderFillRect(renderer, &star);
+    star->Render(renderer);
   }
 }
 

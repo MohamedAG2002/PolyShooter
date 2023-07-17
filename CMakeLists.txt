@@ -27,6 +27,7 @@ set(SOURCES
   src/cpp/Entities/Player.cpp
   src/cpp/Entities/Bullet.cpp
   src/cpp/Entities/Enemy.cpp
+  src/cpp/Entities/Star.cpp
 
   # Scenes 
   src/cpp/Scenes/MenuScene.cpp

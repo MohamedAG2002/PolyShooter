@@ -46,6 +46,11 @@
 },
 {
   "directory": "/home/mohamed/Dev/C++/SDL/PolyShooter/build",
+  "command": "/usr/bin/c++  -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2 -std=gnu++20 -o CMakeFiles/ps.dir/src/cpp/Entities/Star.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/Star.cpp",
+  "file": "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/Star.cpp"
+},
+{
+  "directory": "/home/mohamed/Dev/C++/SDL/PolyShooter/build",
   "command": "/usr/bin/c++  -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2 -std=gnu++20 -o CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/MenuScene.cpp",
   "file": "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/MenuScene.cpp"
 },

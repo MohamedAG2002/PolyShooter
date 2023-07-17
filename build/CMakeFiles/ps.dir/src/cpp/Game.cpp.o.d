@@ -374,7 +374,9 @@ CMakeFiles/ps.dir/src/cpp/Game.cpp.o: \
  /usr/include/c++/11/pstl/execution_defs.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Background.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Core/Vec2.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Core/Color.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Entities/Star.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Entities/Entity.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Entities/../Core/Color.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Constants.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Managers/AssetManager.h \
