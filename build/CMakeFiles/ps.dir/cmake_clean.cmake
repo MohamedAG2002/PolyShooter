@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o"
   "CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o.d"
+  "CMakeFiles/ps.dir/src/cpp/Managers/ScoreManager.cpp.o"
+  "CMakeFiles/ps.dir/src/cpp/Managers/ScoreManager.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Managers/SpawnManager.cpp.o"
   "CMakeFiles/ps.dir/src/cpp/Managers/SpawnManager.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o"

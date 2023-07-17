@@ -1,4 +1,5 @@
 #include "../../header/Managers/EventManager.h"
+#include "../../header/Enums/EventType.h"
 #include "../../header/Enums/SceneType.h"
 
 namespace ps { // beginning of ps
@@ -22,6 +23,25 @@ void EventManager::ListenToSceneEvent(SceneEventCallback& scnCallback)
 void EventManager::DispatchSceneEvent(SceneType st)
 {
   m_scnCallback(st);
+}
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+// Collision event
+void EventManager::ListenToCollisionEvent(EventType et, CollisionEventCallback& collCallback)
+{
+  if(et == EventType::PLAYER_COLLISION)
+    m_playerColl = collCallback;
+  else if(et == EventType::BULLET_COLLISION)
+    m_bulletColl = collCallback;
+}
+
+void EventManager::DispatchCollisionEvent(EventType et)
+{
+  if(et == EventType::PLAYER_COLLISION)
+    m_playerColl(et);
+  else if(et == EventType::BULLET_COLLISION)
+    m_bulletColl(et);
 }
 // -------------------------------------------------------------------
 

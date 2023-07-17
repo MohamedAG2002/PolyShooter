@@ -135,6 +135,7 @@ CMakeFiles/ps.dir/src/cpp/Utls.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_gesture.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_touch.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_scancode.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_rect.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_keyboard.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_stdinc.h \
  /usr/include/c++/11/random /usr/include/c++/11/string \

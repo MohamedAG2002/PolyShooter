@@ -4,6 +4,7 @@
 #include "../../header/Scenes/GameScene.h"
 #include "../../header/Scenes/OverScene.h"
 #include "../../header/Managers/EventManager.h"
+#include "../../header/Managers/ScoreManager.h"
 
 #include <SDL2/SDL.h>
 
@@ -13,9 +14,11 @@ namespace ps { // beginning of ps
 
 SceneManager::SceneManager()
 {
+  m_scrMgr = std::make_shared<ScoreManager>();
+
   m_scenes["Menu"] = std::make_shared<MenuScene>(); 
-  m_scenes["Game"] = std::make_shared<GameScene>(); 
-  m_scenes["Over"] = std::make_shared<OverScene>(); 
+  m_scenes["Game"] = std::make_shared<GameScene>(m_scrMgr->score); 
+  m_scenes["Over"] = std::make_shared<OverScene>(m_scrMgr->score, m_scrMgr->highScore); 
 
   currentScene = m_scenes["Menu"];
 
@@ -54,6 +57,7 @@ void SceneManager::ProcessInputs(SDL_Event event)
 void SceneManager::Update(float dt)
 {
   currentScene->Update(dt);
+  m_scrMgr->Update();
 }
 
 void SceneManager::Render(SDL_Renderer* renderer)

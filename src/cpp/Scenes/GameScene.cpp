@@ -7,19 +7,22 @@
 #include <SDL2/SDL.h>
 
 #include <memory>
+#include <string>
 
 namespace ps {
   
-GameScene::GameScene()
+GameScene::GameScene(int& score)
 {
-  m_healthText = std::make_unique<Text>("Health: 0", Anchor::TOP_LEFT, TextType::MEDIUM_TEXT, Color::White);
-  m_scoreText = std::make_unique<Text>("Score: 0", Anchor::TOP_RIGHT, TextType::MEDIUM_TEXT, Color::White);
+  m_enttMgr = std::make_unique<EntityManager>();
+  
+  m_healthText = std::make_unique<Text>("Health: " + std::to_string(m_enttMgr->player->health), 
+                                        Anchor::TOP_LEFT, TextType::MEDIUM_TEXT, Color::White);
+  m_scoreText = std::make_unique<Text>("Score: " + std::to_string(score), 
+                                       Anchor::TOP_RIGHT, TextType::MEDIUM_TEXT, Color::White);
   m_pauseText = std::make_unique<Text>("PAUSED", Anchor::CENTER, TextType::BIG_TEXT, Color::White);
   m_toMenuText = std::make_unique<Text>("[M] MENU", Anchor::BOTTOM_LEFT, TextType::MEDIUM_TEXT, Color::White);
 
   m_isPaused = false;
-
-  m_enttMgr = std::make_unique<EntityManager>();
 }
 
 void GameScene::ProcessInputs(SDL_Event event)
@@ -48,6 +51,7 @@ void GameScene::Update(float dt)
   if(m_isPaused)
     return;
 
+  m_enttMgr->CollisionUpdate();
   m_enttMgr->Update(dt);
 }
 
@@ -68,6 +72,7 @@ void GameScene::Render(SDL_Renderer* renderer)
 void GameScene::Reset()
 {
   m_isPaused = false;
+  m_enttMgr->Reset();
 }
 
 }

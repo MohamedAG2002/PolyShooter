@@ -2,6 +2,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/EventManager.cpp \
  /usr/include/stdc-predef.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/EventManager.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/../Enums/EventType.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/../Enums/SceneType.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/../Entities/Entity.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/../Entities/../Core/Vec2.h \

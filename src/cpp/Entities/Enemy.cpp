@@ -15,9 +15,10 @@ Enemy::Enemy(float posX, float posY, bool active)
   isActive = active;
 
   // Own variables
-  texture = AssetManager::Get().GetSprite("Enemy");
   velocity = Vec2(0.0f, ENEMY_SPEED);
   size = Vec2(32.0f, 32.0f);
+  texture = AssetManager::Get().GetSprite("Enemy");
+  rect = {position.x, position.y, size.x, size.y};
 }
 
 void Enemy::ProcessInput(SDL_Event event)
@@ -40,7 +41,10 @@ void Enemy::Update(float dt)
 
 void Enemy::Render(SDL_Renderer* renderer)
 {
-  SDL_FRect rect = {position.x, position.y, size.x, size.y};
+  // Updating the position for collisions
+  rect.x = position.x;
+  rect.y = position.y;
+
   SDL_RenderCopyF(renderer, texture, nullptr, &rect);
 }
 

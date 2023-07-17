@@ -2,6 +2,7 @@
 
 #include "../Scenes/Scene.h"
 #include "../Enums/SceneType.h"
+#include "../Managers/ScoreManager.h"
 
 #include <SDL2/SDL.h>
 
@@ -30,6 +31,7 @@ class SceneManager
     void Render(SDL_Renderer* renderer);
 
   private:
+    std::shared_ptr<ScoreManager> m_scrMgr;
     std::unordered_map<std::string, std::shared_ptr<Scene>> m_scenes;
 };
 

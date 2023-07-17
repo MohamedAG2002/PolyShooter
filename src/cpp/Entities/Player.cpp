@@ -24,8 +24,19 @@ Player::Player(float posX, float posY)
   size = Vec2(32.0f, 32.0f);
   health = PLYR_MAX_HEALTH;
   texture = AssetManager::Get().GetSprite("Player");
+  rect = {position.x, position.y, size.x, size.y};
+
   m_cooldownTimer.Start();
   m_canShoot = true;
+
+  // Lambda implementation
+  m_collCallback = [&](EventType et) {
+    health -= 1;
+    // Potentially, disable the collider for a couple of seconds
+  };
+
+  // Listening to events
+  EventManager::Get().ListenToCollisionEvent(EventType::PLAYER_COLLISION, m_collCallback);
 } 
 
 void Player::ProcessInput(SDL_Event event)
@@ -54,6 +65,10 @@ void Player::ProcessInput(SDL_Event event)
 
 void Player::Update(float dt)
 {
+  // Kill the player when low on health
+  if(health <= 0)
+    isActive = false;
+
   // Counting the timer
   m_cooldownTimer.Update();
 
@@ -69,7 +84,10 @@ void Player::Update(float dt)
 
 void Player::Render(SDL_Renderer* renderer)
 {
-  SDL_FRect rect = {position.x, position.y, size.x, size.y};
+  // Updating the position of the rect for collisions
+  rect.x = position.x;
+  rect.y = position.y;
+
   SDL_RenderCopyF(renderer, texture, nullptr, &rect);
 }
 

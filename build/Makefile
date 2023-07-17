@@ -417,6 +417,30 @@ src/cpp/Managers/SceneManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.s
 .PHONY : src/cpp/Managers/SceneManager.cpp.s
 
+src/cpp/Managers/ScoreManager.o: src/cpp/Managers/ScoreManager.cpp.o
+.PHONY : src/cpp/Managers/ScoreManager.o
+
+# target to build an object file
+src/cpp/Managers/ScoreManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Managers/ScoreManager.cpp.o
+.PHONY : src/cpp/Managers/ScoreManager.cpp.o
+
+src/cpp/Managers/ScoreManager.i: src/cpp/Managers/ScoreManager.cpp.i
+.PHONY : src/cpp/Managers/ScoreManager.i
+
+# target to preprocess a source file
+src/cpp/Managers/ScoreManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Managers/ScoreManager.cpp.i
+.PHONY : src/cpp/Managers/ScoreManager.cpp.i
+
+src/cpp/Managers/ScoreManager.s: src/cpp/Managers/ScoreManager.cpp.s
+.PHONY : src/cpp/Managers/ScoreManager.s
+
+# target to generate assembly for a file
+src/cpp/Managers/ScoreManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Managers/ScoreManager.cpp.s
+.PHONY : src/cpp/Managers/ScoreManager.cpp.s
+
 src/cpp/Managers/SpawnManager.o: src/cpp/Managers/SpawnManager.cpp.o
 .PHONY : src/cpp/Managers/SpawnManager.o
 
@@ -630,6 +654,9 @@ help:
 	@echo "... src/cpp/Managers/SceneManager.o"
 	@echo "... src/cpp/Managers/SceneManager.i"
 	@echo "... src/cpp/Managers/SceneManager.s"
+	@echo "... src/cpp/Managers/ScoreManager.o"
+	@echo "... src/cpp/Managers/ScoreManager.i"
+	@echo "... src/cpp/Managers/ScoreManager.s"
 	@echo "... src/cpp/Managers/SpawnManager.o"
 	@echo "... src/cpp/Managers/SpawnManager.i"
 	@echo "... src/cpp/Managers/SpawnManager.s"

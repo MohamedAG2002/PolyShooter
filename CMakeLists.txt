@@ -42,6 +42,7 @@ set(SOURCES
   src/cpp/Managers/AssetManager.cpp
   src/cpp/Managers/EntityManager.cpp
   src/cpp/Managers/SpawnManager.cpp
+  src/cpp/Managers/ScoreManager.cpp
 
   # Utls
   src/cpp/Utls.cpp

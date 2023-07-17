@@ -10,15 +10,18 @@
 #include <SDL2/SDL.h>
 
 #include <memory>
+#include <string>
 
 namespace ps { // beginning of ps
 
-OverScene::OverScene()
+OverScene::OverScene(int& score, int& highScore)
 {
   m_title = std::make_unique<Text>("YOU DIED!", Anchor::TOP_CENTER, TextType::BIG_TEXT, Color::White);
-  m_scoreText = std::make_unique<Text>("SCORE:", Anchor::CENTER, TextType::MEDIUM_TEXT, Color::White);
-  m_highScoreText = std::make_unique<Text>("HIGH SCORE:", Anchor::CENTER, TextType::MEDIUM_TEXT, Color::White, Vec2(0.0f, 50.0f));
-  m_replayText = std::make_unique<Text>("[SPACE] REPLAY", Anchor::BOTTOM_LEFT, TextType::SMALL_TEXT, Color::White);
+  m_scoreText = std::make_unique<Text>("SCORE: " + std::to_string(score), 
+                                       Anchor::CENTER, TextType::MEDIUM_TEXT, Color::White);
+  m_highScoreText = std::make_unique<Text>("HIGH SCORE: " + std::to_string(highScore), 
+                                           Anchor::CENTER, TextType::MEDIUM_TEXT, Color::White, Vec2(0.0f, 50.0f));
+  m_replayText = std::make_unique<Text>("[R] REPLAY", Anchor::BOTTOM_LEFT, TextType::SMALL_TEXT, Color::White);
 }
 
 void OverScene::ProcessInputs(SDL_Event event)
@@ -27,7 +30,7 @@ void OverScene::ProcessInputs(SDL_Event event)
   {
     case SDL_KEYDOWN:
       // TRANSITION: Over to Game
-      if(event.key.keysym.sym == SDLK_SPACE)
+      if(event.key.keysym.sym == SDLK_r)
         EventManager::Get().DispatchSceneEvent(SceneType::GAME);
       break; 
   }

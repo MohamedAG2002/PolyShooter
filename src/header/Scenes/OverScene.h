@@ -2,6 +2,7 @@
 
 #include "Scene.h"
 #include "../UI/Text.h"
+#include "../Managers/ScoreManager.h"
 
 #include <SDL2/SDL.h>
 
@@ -12,7 +13,7 @@ namespace ps {
 class OverScene : public Scene
 {
   public:
-    OverScene();
+    OverScene(int& score, int& highScore);
 
   public:
     void ProcessInputs(SDL_Event event);

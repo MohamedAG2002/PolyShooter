@@ -17,6 +17,7 @@ Bullet::Bullet(float posX, float posY, bool active)
   velocity = Vec2(0.0f, -BULLET_SPEED);
   size = Vec2(16.0f, 16.0f);
   texture = AssetManager::Get().GetSprite("Bullet");
+  rect = {position.x, position.y, size.x, size.y};
 }
 
 void Bullet::ProcessInput(SDL_Event event)
@@ -38,7 +39,10 @@ void Bullet::Update(float dt)
 
 void Bullet::Render(SDL_Renderer* renderer)
 {
-  SDL_FRect rect = {position.x, position.y, size.x, size.y};
+  // Updating the position of the rect for collisions
+  rect.x = position.x;
+  rect.y = position.y;
+
   SDL_RenderCopyF(renderer, texture, nullptr, &rect);
 }
 

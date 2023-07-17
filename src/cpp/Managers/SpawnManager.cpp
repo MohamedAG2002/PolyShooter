@@ -23,13 +23,20 @@ void SpawnManager::Update()
   if(m_spawnTimer.hasRunOut)
   {
     EventManager::Get().DispatchSpawnEvent("Enemy", position);
-    position.x = (float)utls::GetRandom(32, consts::SCREEN_WIDTH - 32); 
+    position.x = (float)utls::GetRandom(64, consts::SCREEN_WIDTH - 64); 
   }
 
   // When this timer has runout, the time it takes to spawn an enemy 
   // will decrease. Therefore, enemies will spawn quicker than before
-  if(m_difficultyTimer.hasRunOut)
-    m_spawnTimer.maxTime -= 1.0f;
+  // Also, there is a limit of how much the spawn timer can decrease
+  if(m_difficultyTimer.hasRunOut && m_spawnTimer.maxTime >= 30)
+    m_spawnTimer.maxTime -= 8.0f;
+}
+
+void SpawnManager::Reset()
+{
+  m_spawnTimer.Reset();
+  m_difficultyTimer.Reset();
 }
 
 } // end of ps

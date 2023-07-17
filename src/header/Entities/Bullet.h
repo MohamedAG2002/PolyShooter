@@ -18,6 +18,7 @@ class Bullet : public Entity
   public:
     Vec2 velocity, size;
     SDL_Texture* texture = nullptr;
+    SDL_FRect rect;
 
   public:
     void ProcessInput(SDL_Event event) override;

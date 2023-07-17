@@ -16,8 +16,8 @@
 
 namespace ps { // beginning of ps
 
-const size_t MAX_BULLETS = 6;
-const size_t MAX_ENEMIES = 20;
+const size_t MAX_BULLETS = 10;
+const size_t MAX_ENEMIES = 40;
 
 class EntityManager
 {
@@ -31,20 +31,21 @@ class EntityManager
   public:
     void ProcessInputs(SDL_Event event);
     void Update(float dt);
+    void CollisionUpdate();
     void Render(SDL_Renderer* renderer);
     void Reset();
-
+    
+  public:
+    std::shared_ptr<Player> player;
+    std::vector<std::shared_ptr<Bullet>> bullets = std::vector<std::shared_ptr<Bullet>>(MAX_BULLETS);   
+    std::vector<std::shared_ptr<Enemy>> enemies = std::vector<std::shared_ptr<Enemy>>(MAX_ENEMIES);   
+  
   private:
-    std::shared_ptr<Player> m_player;
-    std::vector<std::shared_ptr<Bullet>> m_bullets = std::vector<std::shared_ptr<Bullet>>(MAX_BULLETS);   
-    std::vector<std::shared_ptr<Enemy>> m_enemies = std::vector<std::shared_ptr<Enemy>>(MAX_ENEMIES);   
     SpawnManager m_spawnMgr;
 
   private:
     template<typename T>
     void m_SpawnEntity(const std::vector<std::shared_ptr<T>>& entities, const Vec2& pos);
-    void m_SpawnBullet(const Vec2& pos);
-    void m_SpawnEnemy(const Vec2& pos);
 };
 
 } // end of ps

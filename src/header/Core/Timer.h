@@ -15,9 +15,10 @@ class Timer
   public:
     void Start();
     void Update();
+    void Reset();
 
   private:
-    float m_timer;
+    float m_timer, m_initialTime;
     bool m_isOneTime, m_hasStarted;
 };
 

@@ -15,8 +15,9 @@ class Enemy : public Entity
     Enemy(float posX, float posY, bool active);
 
   public:
-    SDL_Texture* texture = nullptr;
     Vec2 velocity, size;
+    SDL_Texture* texture = nullptr;
+    SDL_FRect rect;
 
   public:
     void ProcessInput(SDL_Event event) override;

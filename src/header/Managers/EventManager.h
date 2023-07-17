@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../Enums/EventType.h"
 #include "../Enums/SceneType.h"
 #include "../Entities/Entity.h"
 #include "../Core/Vec2.h"
@@ -17,6 +18,7 @@ class EventManager
   public:
     using SceneEventCallback = std::function<void(SceneType)>;
     using SpawnEventCallback = std::function<void(const std::string&, const Vec2&)>;
+    using CollisionEventCallback = std::function<void(EventType)>;
   // ------------------------------------------- 
   
   // Methods
@@ -32,6 +34,8 @@ class EventManager
     // Sound event
     
     // Collision event
+    void ListenToCollisionEvent(EventType et, CollisionEventCallback& collCallback);
+    void DispatchCollisionEvent(EventType et);
 
     // Spawn event
     void ListenToSpawnEvent(SpawnEventCallback& spawnCallback);
@@ -52,7 +56,8 @@ class EventManager
   // ------------------------------------------- 
   private:
     SceneEventCallback m_scnCallback;
-    SpawnEventCallback m_spawnCallback;  
+    SpawnEventCallback m_spawnCallback;
+    CollisionEventCallback m_bulletColl, m_playerColl;
   // ------------------------------------------- 
 
   // Constructor

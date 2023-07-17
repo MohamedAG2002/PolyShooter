@@ -7,13 +7,15 @@ Timer::Timer()
   maxTime = 1.0f;
   hasRunOut = false;
   m_timer = 0.0f;
+  m_initialTime = maxTime;
   m_isOneTime = false;
   m_hasStarted = false;
 }
 
 Timer::Timer(float timeToWait, bool oneTime)
-  :maxTime(timeToWait), m_isOneTime(oneTime)
+  :m_initialTime(timeToWait), m_isOneTime(oneTime)
 {
+  maxTime = m_initialTime;
   hasRunOut = false;
   m_timer = 0.0f;
   m_hasStarted = false;
@@ -48,6 +50,14 @@ void Timer::Update()
   }
   else
     hasRunOut = false;
+}
+
+void Timer::Reset()
+{
+  maxTime = m_initialTime;
+  hasRunOut = false;
+  m_timer = 0.0f;
+  m_hasStarted = true;
 }
 
 } // end of ps

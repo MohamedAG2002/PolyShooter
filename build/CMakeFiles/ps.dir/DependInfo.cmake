@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/EntityManager.cpp" "CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o.d"
   "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/EventManager.cpp" "CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o.d"
   "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/SceneManager.cpp" "CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o.d"
+  "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/ScoreManager.cpp" "CMakeFiles/ps.dir/src/cpp/Managers/ScoreManager.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Managers/ScoreManager.cpp.o.d"
   "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/SpawnManager.cpp" "CMakeFiles/ps.dir/src/cpp/Managers/SpawnManager.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Managers/SpawnManager.cpp.o.d"
   "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/GameScene.cpp" "CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Scenes/GameScene.cpp.o.d"
   "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/MenuScene.cpp" "CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.o" "gcc" "CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.o.d"

@@ -9,7 +9,6 @@ enum class EventType
 
   PLAYER_COLLISION,
   BULLET_COLLISION,
-  ENEMY_COLLISION,
 };
 
 } // end of ps
