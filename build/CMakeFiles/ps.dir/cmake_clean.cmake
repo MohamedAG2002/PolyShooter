@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ps.dir/src/cpp/Background.cpp.o"
+  "CMakeFiles/ps.dir/src/cpp/Background.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Core/Color.cpp.o"
   "CMakeFiles/ps.dir/src/cpp/Core/Color.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Core/Timer.cpp.o"

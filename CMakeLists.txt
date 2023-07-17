@@ -44,8 +44,9 @@ set(SOURCES
   src/cpp/Managers/SpawnManager.cpp
   src/cpp/Managers/ScoreManager.cpp
 
-  # Utls
+  # Misc.
   src/cpp/Utls.cpp
+  src/cpp/Background.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})

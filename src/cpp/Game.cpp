@@ -99,6 +99,7 @@ void Game::Render()
   SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
   SDL_RenderClear(renderer);
 
+  m_background.Render(renderer);
   m_scnMgr->Render(renderer);
 
   SDL_RenderPresent(renderer);

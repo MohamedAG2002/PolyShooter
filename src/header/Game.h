@@ -1,6 +1,7 @@
 #pragma once
 
-#include "../header/Managers/SceneManager.h"
+#include "Managers/SceneManager.h"
+#include "Background.h"
 
 #include <SDL2/SDL.h>
 
@@ -30,6 +31,7 @@ class Game
     void Run();
 
   private:
+    Background m_background;
     std::unique_ptr<SceneManager> m_scnMgr; 
 
   private:

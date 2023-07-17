@@ -2,8 +2,8 @@ CMakeFiles/ps.dir/src/cpp/Game.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Game.cpp \
  /usr/include/stdc-predef.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Game.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/../header/Managers/SceneManager.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/../header/Managers/../Scenes/Scene.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Managers/SceneManager.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Managers/../Scenes/Scene.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_main.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_stdinc.h \
@@ -244,7 +244,7 @@ CMakeFiles/ps.dir/src/cpp/Game.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_version.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_locale.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_misc.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/../header/Managers/../Enums/SceneType.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Managers/../Enums/SceneType.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h /usr/include/c++/11/tuple \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
@@ -372,6 +372,10 @@ CMakeFiles/ps.dir/src/cpp/Game.cpp.o: \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Background.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Core/Vec2.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Core/Color.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Constants.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Managers/AssetManager.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_ttf.h \

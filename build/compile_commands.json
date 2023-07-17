@@ -98,5 +98,10 @@
   "directory": "/home/mohamed/Dev/C++/SDL/PolyShooter/build",
   "command": "/usr/bin/c++  -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2 -std=gnu++20 -o CMakeFiles/ps.dir/src/cpp/Utls.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Utls.cpp",
   "file": "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Utls.cpp"
+},
+{
+  "directory": "/home/mohamed/Dev/C++/SDL/PolyShooter/build",
+  "command": "/usr/bin/c++  -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2 -std=gnu++20 -o CMakeFiles/ps.dir/src/cpp/Background.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Background.cpp",
+  "file": "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Background.cpp"
 }
 ]

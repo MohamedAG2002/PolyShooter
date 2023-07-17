@@ -129,6 +129,30 @@ ps/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/build
 .PHONY : ps/fast
 
+src/cpp/Background.o: src/cpp/Background.cpp.o
+.PHONY : src/cpp/Background.o
+
+# target to build an object file
+src/cpp/Background.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Background.cpp.o
+.PHONY : src/cpp/Background.cpp.o
+
+src/cpp/Background.i: src/cpp/Background.cpp.i
+.PHONY : src/cpp/Background.i
+
+# target to preprocess a source file
+src/cpp/Background.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Background.cpp.i
+.PHONY : src/cpp/Background.cpp.i
+
+src/cpp/Background.s: src/cpp/Background.cpp.s
+.PHONY : src/cpp/Background.s
+
+# target to generate assembly for a file
+src/cpp/Background.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Background.cpp.s
+.PHONY : src/cpp/Background.cpp.s
+
 src/cpp/Core/Color.o: src/cpp/Core/Color.cpp.o
 .PHONY : src/cpp/Core/Color.o
 
@@ -618,6 +642,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ps"
+	@echo "... src/cpp/Background.o"
+	@echo "... src/cpp/Background.i"
+	@echo "... src/cpp/Background.s"
 	@echo "... src/cpp/Core/Color.o"
 	@echo "... src/cpp/Core/Color.i"
 	@echo "... src/cpp/Core/Color.s"

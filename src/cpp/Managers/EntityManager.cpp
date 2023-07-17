@@ -47,7 +47,10 @@ EntityManager::EntityManager()
 }
 
 EntityManager::~EntityManager()
-{}
+{
+  bullets.clear();
+  enemies.clear();
+}
 
 void EntityManager::ProcessInputs(SDL_Event event)
 {
