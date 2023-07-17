@@ -14,7 +14,7 @@ namespace ps { // beginning of ps
 
 const float PLYR_SPEED = 410.0f;
 const uint8_t PLYR_MAX_HEALTH = 3;
-const float PLYR_MAX_SHOT_COOLDOWN = 10.0f;
+const float PLYR_MAX_SHOT_COOLDOWN = 15.0f;
 
 class Player : public Entity
 {
