@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ps.dir/src/cpp/Game.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o"
   "CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.o.d"
+  "CMakeFiles/ps.dir/src/cpp/Managers/AudioManager.cpp.o"
+  "CMakeFiles/ps.dir/src/cpp/Managers/AudioManager.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o"
   "CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o.d"
   "CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o"

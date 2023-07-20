@@ -5,6 +5,8 @@
 #include "../Entities/Entity.h"
 #include "../Core/Vec2.h"
 
+#include <SDL_mixer.h>
+
 #include <functional>
 #include <string>
 
@@ -19,6 +21,7 @@ class EventManager
     using SceneEventCallback = std::function<void(SceneType)>;
     using SpawnEventCallback = std::function<void(const std::string&, const Vec2&)>;
     using CollisionEventCallback = std::function<void(EventType)>;
+    using SoundEventCallback = std::function<void(Mix_Chunk*)>;
   // ------------------------------------------- 
   
   // Methods
@@ -32,6 +35,8 @@ class EventManager
     void DispatchSceneEvent(SceneType st);
 
     // Sound event
+    void ListenToSoundEvent(SoundEventCallback& sndCallback);
+    void DispatchSoundEvent(Mix_Chunk* sound);
     
     // Collision event
     void ListenToCollisionEvent(EventType et, CollisionEventCallback& collCallback);
@@ -58,6 +63,7 @@ class EventManager
     SceneEventCallback m_scnCallback;
     SpawnEventCallback m_spawnCallback;
     CollisionEventCallback m_bulletColl, m_playerColl;
+    SoundEventCallback m_soundCallback;
   // ------------------------------------------- 
 
   // Constructor

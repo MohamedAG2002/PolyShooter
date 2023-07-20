@@ -6,6 +6,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 #include <SDL2/SDL_image.h>
+#include <SDL2/SDL_mixer.h>
 
 #include <iostream>
 #include <memory>
@@ -21,7 +22,7 @@ Game::Game()
   event = {0};
   
   // Err if something goes wrong with SDL initialization 
-  if(SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS) != 0)
+  if(SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS | SDL_INIT_AUDIO) != 0)
     m_ExitGameWithError("SDL failed to initialize");
  
   // Err if something goes wrong with SDL_ttf initialization 
@@ -31,7 +32,13 @@ Game::Game()
   // This does not need to check for errors as it returns the IMG init flags given.
   IMG_Init(IMG_INIT_PNG);
 
-  // Window init
+  // This call to initialize SDL_mixer is optional but I'm making it nonetheless
+  Mix_Init(MIX_INIT_MP3);
+  
+  // Open the audio so that sounds comes out. It can err, so best check for errors
+  if(Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) != 0)
+    m_ExitGameWithError("SDL_mixer failed to initialize");
+
   window = SDL_CreateWindow("Poly Shooter", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 
                             consts::SCREEN_WIDTH, consts::SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 
@@ -57,7 +64,8 @@ Game::~Game()
 
   SDL_DestroyRenderer(renderer);
   SDL_DestroyWindow(window);
-
+  
+  Mix_Quit();
   IMG_Quit();
   TTF_Quit();
   SDL_Quit();

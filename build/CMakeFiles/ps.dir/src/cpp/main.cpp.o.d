@@ -372,6 +372,8 @@ CMakeFiles/ps.dir/src/cpp/main.cpp.o: \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Managers/AudioManager.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Background.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Core/Vec2.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Entities/Star.h \

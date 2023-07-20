@@ -392,4 +392,5 @@ CMakeFiles/ps.dir/src/cpp/Managers/SceneManager.cpp.o: \
  /usr/include/c++/11/cstddef \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/OverScene.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Scenes/../Managers/ScoreManager.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/EventManager.h
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/EventManager.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h

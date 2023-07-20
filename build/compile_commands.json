@@ -101,6 +101,11 @@
 },
 {
   "directory": "/home/mohamed/Dev/C++/SDL/PolyShooter/build",
+  "command": "/usr/bin/c++  -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2 -std=gnu++20 -o CMakeFiles/ps.dir/src/cpp/Managers/AudioManager.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/AudioManager.cpp",
+  "file": "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/AudioManager.cpp"
+},
+{
+  "directory": "/home/mohamed/Dev/C++/SDL/PolyShooter/build",
   "command": "/usr/bin/c++  -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include -isystem /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2 -std=gnu++20 -o CMakeFiles/ps.dir/src/cpp/Utls.cpp.o -c /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Utls.cpp",
   "file": "/home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Utls.cpp"
 },

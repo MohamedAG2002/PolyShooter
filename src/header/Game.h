@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Managers/SceneManager.h"
+#include "Managers/AudioManager.h"
 #include "Background.h"
 
 #include <SDL2/SDL.h>
@@ -32,7 +33,8 @@ class Game
 
   private:
     Background m_background;
-    std::unique_ptr<SceneManager> m_scnMgr; 
+    std::unique_ptr<SceneManager> m_scnMgr;
+    AudioManager m_audioMgr;
 
   private:
     void m_ExitGameWithError(std::string&& errMsg);

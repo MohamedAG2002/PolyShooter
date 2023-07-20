@@ -3,6 +3,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 #include <SDL2/SDL_image.h>
+#include <SDL2/SDL_mixer.h>
 
 #include <unordered_map>
 #include <string>
@@ -27,6 +28,9 @@ class AssetManager
     // Loads only the sprites
     void LoadSprites(SDL_Renderer* renderer);
 
+    // Loads only the sounds
+    void LoadSounds();
+
     // Unload all of the assets
     void UnloadAssets();
 
@@ -35,6 +39,9 @@ class AssetManager
 
     // Return the sprite
     SDL_Texture* GetSprite(const std::string&& spriteName);
+
+    // Return the sound
+    Mix_Chunk* GetSound(const std::string&& soundName); 
   // ------------------------------------------- 
 
   // Finky stuff to make this class a singleton
@@ -52,6 +59,7 @@ class AssetManager
   private:
     std::unordered_map<std::string, TTF_Font*> m_fonts;      
     std::unordered_map<std::string, SDL_Texture*> m_sprites;      
+    std::unordered_map<std::string, Mix_Chunk*> m_sounds;      
   // ------------------------------------------- 
 
   // Constructor

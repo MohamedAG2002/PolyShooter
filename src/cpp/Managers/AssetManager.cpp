@@ -3,6 +3,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 #include <SDL2/SDL_image.h>
+#include <SDL2/SDL_mixer.h>
 
 #include <iostream>
 
@@ -18,6 +19,7 @@ void AssetManager::LoadAssets(SDL_Renderer* renderer)
 {
   LoadFont();
   LoadSprites(renderer);
+  LoadSounds();
 }
 
 void AssetManager::LoadFont()
@@ -46,6 +48,21 @@ void AssetManager::LoadSprites(SDL_Renderer* renderer)
   }
 }
 
+void AssetManager::LoadSounds()
+{
+  m_sounds["Player-Death"] = Mix_LoadWAV("assets/audio/player_death.wav");
+  m_sounds["Player-Shoot"] = Mix_LoadWAV("assets/audio/player_shoot.wav");
+  m_sounds["Player-Hit"] = Mix_LoadWAV("assets/audio/player_hit.wav");
+  m_sounds["Enemy-Death"] = Mix_LoadWAV("assets/audio/enemy_death.wav");
+
+  // Err if any of the sounds do not load
+  for(auto[k, v] : m_sounds)
+  {
+    if(!v)
+      std::cout << k << " sounds failed to load: " << Mix_GetError() << std::endl; 
+  }
+}
+
 void AssetManager::UnloadAssets()
 {
   // Unloading the fonts
@@ -59,6 +76,12 @@ void AssetManager::UnloadAssets()
   SDL_DestroyTexture(m_sprites["Enemy"]);
   SDL_DestroyTexture(m_sprites["Bullet"]);
   m_sprites.clear();
+
+  // Unloading sounds
+  Mix_FreeChunk(m_sounds["Player-Death"]);
+  Mix_FreeChunk(m_sounds["Player-Shoot"]);
+  Mix_FreeChunk(m_sounds["Enemy-Death"]);
+  m_sounds.clear();
 }
 
 TTF_Font* AssetManager::GetFont(const std::string&& fontName)
@@ -69,6 +92,11 @@ TTF_Font* AssetManager::GetFont(const std::string&& fontName)
 SDL_Texture* AssetManager::GetSprite(const std::string&& spriteName)
 {
   return m_sprites[spriteName];
+}
+
+Mix_Chunk* AssetManager::GetSound(const std::string&& soundName)
+{
+  return m_sounds[soundName];
 }
 
 } // end of ps

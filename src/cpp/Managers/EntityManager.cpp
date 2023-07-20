@@ -1,5 +1,6 @@
 #include "../../header/Managers/EntityManager.h"
 #include "../../header/Managers/EventManager.h"
+#include "../../header/Managers/AssetManager.h"
 #include "../../header/Entities/Player.h"
 #include "../../header/Entities/Bullet.h"
 #include "../../header/Entities/Enemy.h"
@@ -20,7 +21,7 @@ namespace ps { // beginning of ps
  
 EntityManager::EntityManager()
 {
-  player = std::make_shared<Player>(consts::SCREEN_WIDTH / 2.0f - 16.0f, consts::SCREEN_HEIGHT - 64.0f);
+  player = std::make_shared<Player>();
   
   // Filling the array with bullet reserves
   for(int i = 0; i < MAX_BULLETS; i++)
@@ -76,8 +77,11 @@ void EntityManager::Update(float dt)
 
   if(player->isActive)
     player->Update(dt);
-  else 
+  else
+  {
+    EventManager::Get().DispatchSoundEvent(AssetManager::Get().GetSound("Player-Death"));
     EventManager::Get().DispatchSceneEvent(SceneType::OVER);
+  }
   
   for(auto bullet : bullets)
   {
@@ -105,6 +109,7 @@ void EntityManager::CollisionUpdate()
     {
       enemy->isActive = false;
       EventManager::Get().DispatchCollisionEvent(EventType::PLAYER_COLLISION); 
+      EventManager::Get().DispatchSoundEvent(AssetManager::Get().GetSound("Player-Hit")); 
     }
 
     // COLLISION: Bullet vs. Enemy
@@ -118,6 +123,7 @@ void EntityManager::CollisionUpdate()
         bullet->isActive = false;
         enemy->isActive = false;
         EventManager::Get().DispatchCollisionEvent(EventType::BULLET_COLLISION);
+        EventManager::Get().DispatchSoundEvent(AssetManager::Get().GetSound("Enemy-Death"));
       }
     }
   }
@@ -144,10 +150,8 @@ void EntityManager::Render(SDL_Renderer* renderer)
 void EntityManager::Reset()
 {
   // Player reset
-  player->health = PLYR_MAX_HEALTH;
-  player->position = Vec2(consts::SCREEN_WIDTH / 2.0f - 16.0f, consts::SCREEN_HEIGHT - 64.0f);
-  player->isActive = true;
-  
+  player->Reset(); 
+
   // Bullet reset
   for(auto bullet : bullets)
   {

@@ -8,6 +8,7 @@ namespace ps { // beginning of ps
  
 SpawnManager::SpawnManager()
 {
+  m_startTimer.Start();
   m_spawnTimer.Start();
   m_difficultyTimer.Start();
 
@@ -16,6 +17,14 @@ SpawnManager::SpawnManager()
 
 void SpawnManager::Update()
 {
+  m_startTimer.Update();
+  
+  // Do NOTHING when this timer has not runout
+  // In other words, start evrything below when this timer finishes
+  if(!m_startTimer.hasRunOut)
+    return;
+
+  // Update timers
   m_spawnTimer.Update();
   m_difficultyTimer.Update();
 
@@ -35,6 +44,7 @@ void SpawnManager::Update()
 
 void SpawnManager::Reset()
 {
+  m_startTimer.Reset();
   m_spawnTimer.Reset();
   m_difficultyTimer.Reset();
 }

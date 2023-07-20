@@ -393,6 +393,30 @@ src/cpp/Managers/AssetManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Managers/AssetManager.cpp.s
 .PHONY : src/cpp/Managers/AssetManager.cpp.s
 
+src/cpp/Managers/AudioManager.o: src/cpp/Managers/AudioManager.cpp.o
+.PHONY : src/cpp/Managers/AudioManager.o
+
+# target to build an object file
+src/cpp/Managers/AudioManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Managers/AudioManager.cpp.o
+.PHONY : src/cpp/Managers/AudioManager.cpp.o
+
+src/cpp/Managers/AudioManager.i: src/cpp/Managers/AudioManager.cpp.i
+.PHONY : src/cpp/Managers/AudioManager.i
+
+# target to preprocess a source file
+src/cpp/Managers/AudioManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Managers/AudioManager.cpp.i
+.PHONY : src/cpp/Managers/AudioManager.cpp.i
+
+src/cpp/Managers/AudioManager.s: src/cpp/Managers/AudioManager.cpp.s
+.PHONY : src/cpp/Managers/AudioManager.s
+
+# target to generate assembly for a file
+src/cpp/Managers/AudioManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps.dir/build.make CMakeFiles/ps.dir/src/cpp/Managers/AudioManager.cpp.s
+.PHONY : src/cpp/Managers/AudioManager.cpp.s
+
 src/cpp/Managers/EntityManager.o: src/cpp/Managers/EntityManager.cpp.o
 .PHONY : src/cpp/Managers/EntityManager.o
 
@@ -699,6 +723,9 @@ help:
 	@echo "... src/cpp/Managers/AssetManager.o"
 	@echo "... src/cpp/Managers/AssetManager.i"
 	@echo "... src/cpp/Managers/AssetManager.s"
+	@echo "... src/cpp/Managers/AudioManager.o"
+	@echo "... src/cpp/Managers/AudioManager.i"
+	@echo "... src/cpp/Managers/AudioManager.s"
 	@echo "... src/cpp/Managers/EntityManager.o"
 	@echo "... src/cpp/Managers/EntityManager.i"
 	@echo "... src/cpp/Managers/EntityManager.s"

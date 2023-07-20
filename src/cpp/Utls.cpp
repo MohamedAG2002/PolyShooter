@@ -1,4 +1,5 @@
 #include "../header/Utls.h"
+#include "../header/Constants.h"
 
 #include <SDL_events.h>
 #include <SDL_keyboard.h>
@@ -7,7 +8,10 @@
 #include <SDL_scancode.h>
 #include <SDL_stdinc.h>
 
+#include <fstream>
+#include <iostream>
 #include <random>
+#include <cstdint>
 
 namespace ps { // beginning of ps
 
@@ -56,6 +60,54 @@ bool CheckSATCollision(SDL_FRect rec1, SDL_FRect rec2)
 SDL_Color PSColorToSDLColor(const Color color)
 {
   return SDL_Color{color.r, color.g, color.b, color.a}; 
+}
+
+void SaveDateToFile(uint16_t data)
+{
+  // Open the file in write mode
+  std::fstream file(consts::FILE_NAME, std::ios::out | std::ios::binary);
+
+  // Err if the file did not open
+  if(!file.is_open())
+  {
+    return;
+    std::cerr << "File: " << consts::FILE_NAME << " failed to open" << std::endl;
+  }
+
+  // Save the data to the file as a binary stream
+  file.write((char*)&data, sizeof(data));
+  
+  // ALWAYS REMEMBER TO CLOSE THE FILE
+  file.close();
+}
+
+uint16_t GetDataFromFile()
+{
+  // Open the file in read mode
+  std::fstream file(consts::FILE_NAME, std::ios::in | std::ios::binary);
+  uint16_t data;
+
+  // Err if the file did not open
+  if(!file.is_open())
+  {
+    return 0;
+    std::cerr << "File: " << consts::FILE_NAME << " failed to open" << std::endl;
+  }
+
+  // Enter into read mode
+  file.read((char*)&data, sizeof(data));
+
+  // Read the file from left to right/top to bottom
+  while(!file.eof())
+  {
+    // Read the contents of the file into the variable
+    file.read((char*)&data, sizeof(data)); 
+  }
+  
+  // ALWAYS REMEMBER TO CLOSE THE FILE
+  file.close();
+
+  return data;
 }
 
 } // end of utls

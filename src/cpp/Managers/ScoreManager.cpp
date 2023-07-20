@@ -1,7 +1,9 @@
 #include "../../header/Managers/ScoreManager.h"
 #include "../../header/Managers/EventManager.h"
 #include "../../header/Enums/EventType.h"
+#include "../../header/Utls.h"
 
+#include <cstdint>
 #include <memory>
 
 namespace ps { // beginning of ps
@@ -12,7 +14,7 @@ std::unique_ptr<ScoreManager> g_scrMgr;
 ScoreManager::ScoreManager()
 {
   score = 0;
-  highScore = 0;
+  highScore = utls::GetDataFromFile();
 
   // Lambda implementation
   CollisionEventCallback collCallback = [&](EventType et) {
@@ -27,7 +29,10 @@ void ScoreManager::Update()
 {
   // Setting the high score
   if(score > highScore)
+  {
     highScore = score;
+    utls::SaveDateToFile(highScore);
+  }
 }
 
 } // end of ps

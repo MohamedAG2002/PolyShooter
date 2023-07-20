@@ -333,8 +333,10 @@ CMakeFiles/ps.dir/src/cpp/Entities/Player.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_ttf.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_image.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/../../header/Managers/EventManager.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Entities/../../header/Managers/../Enums/SceneType.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h \
  /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \

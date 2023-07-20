@@ -383,4 +383,5 @@ CMakeFiles/ps.dir/src/cpp/Scenes/OverScene.cpp.o: \
  /usr/include/c++/11/pstl/execution_defs.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Managers/EventManager.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Managers/../Enums/SceneType.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Managers/../Entities/Entity.h
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Managers/../Entities/Entity.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h

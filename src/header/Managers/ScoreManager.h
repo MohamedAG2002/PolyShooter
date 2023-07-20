@@ -2,6 +2,7 @@
 
 #include "../Enums/EventType.h"
 
+#include <cstdint>
 #include <functional>
 #include <memory>
 
@@ -16,7 +17,7 @@ class ScoreManager
     using CollisionEventCallback = std::function<void(EventType)>;
 
   public:
-    int score, highScore;
+    uint16_t score, highScore;
 
   public:
     void Update();

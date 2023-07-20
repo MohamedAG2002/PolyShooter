@@ -372,6 +372,8 @@ CMakeFiles/ps.dir/src/cpp/Game.cpp.o: \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Managers/AudioManager.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Background.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Core/Vec2.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Entities/Star.h \
@@ -383,5 +385,6 @@ CMakeFiles/ps.dir/src/cpp/Game.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_ttf.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_image.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc

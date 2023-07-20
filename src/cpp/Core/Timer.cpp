@@ -43,10 +43,7 @@ void Timer::Update()
 
     // Don't recount when the timer is one shot
     if(m_isOneTime)
-    {
-      hasRunOut = false;
       m_hasStarted = false;
-    }
   }
   else
     hasRunOut = false;

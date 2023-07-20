@@ -11,6 +11,7 @@ set(CMAKE_PREFIX_PATH ${CMAKE_SOURCE_DIR}/external/)
 find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)
 find_package(SDL2_ttf REQUIRED)
+find_package(SDL2_mixer REQUIRED)
 
 set(SOURCES
   # Base files
@@ -44,6 +45,7 @@ set(SOURCES
   src/cpp/Managers/EntityManager.cpp
   src/cpp/Managers/SpawnManager.cpp
   src/cpp/Managers/ScoreManager.cpp
+  src/cpp/Managers/AudioManager.cpp
 
   # Misc.
   src/cpp/Utls.cpp
@@ -59,4 +61,10 @@ file(COPY assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/external/include)
 
 # Adding the libraries to the project
-target_link_libraries(${PROJECT_NAME} SDL2::SDL2 ${SDL2main} SDL2_image::SDL2_image SDL2_ttf::SDL2_ttf)
+target_link_libraries(${PROJECT_NAME} 
+  SDL2::SDL2 
+  ${SDL2main} 
+  SDL2_image::SDL2_image 
+  SDL2_ttf::SDL2_ttf
+  SDL2_mixer::SDL2_mixer
+)

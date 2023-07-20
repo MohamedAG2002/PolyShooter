@@ -387,6 +387,12 @@ CMakeFiles/ps.dir/src/cpp/Managers/EntityManager.cpp.o: \
  /usr/include/c++/11/pstl/execution_defs.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/EventManager.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/../Enums/SceneType.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Managers/AssetManager.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_ttf.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_image.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Constants.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Managers/../../header/Utls.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_events.h \

@@ -303,6 +303,7 @@ CMakeFiles/ps.dir/src/cpp/Managers/EventManager.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_version.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_locale.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_misc.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h \
  /usr/include/c++/11/functional /usr/include/c++/11/tuple \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \

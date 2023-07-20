@@ -12,16 +12,18 @@
 
 namespace ps { // beginning of ps
 
-Player::Player(float posX, float posY)
+Player::Player()
 {
   // Inherited members
-  position = Vec2(posX, posY);
+  position = Vec2(consts::SCREEN_WIDTH / 2.0f - PLYR_SPRITE_SIZE / 2.0f, 
+                  consts::SCREEN_HEIGHT);
   id = "Player";
   isActive = true;
 
   // Own members
-  velocity = Vec2(0.0f, 0.0f);
+  velocity = Vec2(0.0f, PLYR_SPEED.y);
   size = Vec2(32.0f, 32.0f);
+  initialPosition = position; // Recording the original position for later use
   health = PLYR_MAX_HEALTH;
   texture = AssetManager::Get().GetSprite("Player");
   rect = {position.x, position.y, size.x, size.y};
@@ -40,6 +42,10 @@ Player::Player(float posX, float posY)
 
 void Player::ProcessInput(SDL_Event event)
 {
+  // Only allow inputs once the player is in position
+  if(position.y > (consts::SCREEN_HEIGHT - 64.0f))
+    return;
+
   switch(event.type)
   {
     case SDL_KEYDOWN:
@@ -47,16 +53,17 @@ void Player::ProcessInput(SDL_Event event)
       {
         m_canShoot = false;
         EventManager::Get().DispatchSpawnEvent("Bullet", Vec2(position.x, position.y));
+        EventManager::Get().DispatchSoundEvent(AssetManager::Get().GetSound("Player-Shoot"));
       }
       break; 
   }
 
   // Moving left
-  if(utls::IsKeyDown(SDL_SCANCODE_A))
-    velocity.x = -PLYR_SPEED;
+  if(utls::IsKeyDown(SDL_SCANCODE_A) || utls::IsKeyDown(SDL_SCANCODE_LEFT))
+    velocity.x = -PLYR_SPEED.x;
   // Moving right
-  else if(utls::IsKeyDown(SDL_SCANCODE_D))
-    velocity.x = PLYR_SPEED;
+  else if(utls::IsKeyDown(SDL_SCANCODE_D) || utls::IsKeyDown(SDL_SCANCODE_RIGHT))
+    velocity.x = PLYR_SPEED.x;
   // Stop moving
   else
     velocity.x = 0.0f;
@@ -71,9 +78,18 @@ void Player::Update(float dt)
   // Counting the timer
   m_cooldownTimer.Update();
 
+  // Enable shooting when the timer runs out
   if(m_cooldownTimer.hasRunOut)
     m_canShoot = true;
+
+  // Disable vertical movements when the player is in position...
+  if(position.y <= (consts::SCREEN_HEIGHT - 64.0f))
+    velocity.y = 0.0f;
+  // ...else, keep the same vertical movement
+  else
+    velocity.y = PLYR_SPEED.y;
   
+  // Constantly move the player depending on the velocity
   position += velocity * dt;
 
   // Restricting player's movements inside the borders
@@ -88,6 +104,15 @@ void Player::Render(SDL_Renderer* renderer)
   rect.y = position.y;
 
   SDL_RenderCopyF(renderer, texture, nullptr, &rect);
+}
+
+void Player::Reset()
+{
+  position = initialPosition;
+  velocity = Vec2(0.0f, PLYR_SPEED.y);
+  m_isMoving = false;
+  health = PLYR_MAX_HEALTH;
+  isActive = true;
 }
 
 } // end of ps

@@ -26,8 +26,21 @@ void EventManager::DispatchSceneEvent(SceneType st)
 }
 // -------------------------------------------------------------------
 
+// Sound event functions
 // -------------------------------------------------------------------
+void EventManager::ListenToSoundEvent(SoundEventCallback& sndCallback)
+{
+  m_soundCallback = sndCallback; 
+}
+
+void EventManager::DispatchSoundEvent(Mix_Chunk* sound)
+{
+  m_soundCallback(sound);
+}
+// -------------------------------------------------------------------
+
 // Collision event
+// -------------------------------------------------------------------
 void EventManager::ListenToCollisionEvent(EventType et, CollisionEventCallback& collCallback)
 {
   if(et == EventType::PLAYER_COLLISION)

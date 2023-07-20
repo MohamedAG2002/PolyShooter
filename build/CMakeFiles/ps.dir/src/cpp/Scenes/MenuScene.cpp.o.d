@@ -372,6 +372,7 @@ CMakeFiles/ps.dir/src/cpp/Scenes/MenuScene.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Managers/../Enums/EventType.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Managers/../Enums/SceneType.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/Scenes/../../header/Managers/../Entities/Entity.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \

@@ -307,6 +307,7 @@ CMakeFiles/ps.dir/src/cpp/UI/Text.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/UI/../../header/Managers/AssetManager.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_image.h \
+ /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/hashtable.h \
