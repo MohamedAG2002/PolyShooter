@@ -5,7 +5,3 @@
 * linguist-vendored
 *.cpp linguist-vendored=false
 *.h linguist-vendored=false
-*.c linguist-vendored=true
-*.make linguist-vendored=true
-*.d linguist-vendored=true
-*.cmake linguist-vendored=true
