@@ -68,3 +68,6 @@ target_link_libraries(${PROJECT_NAME}
   SDL2_ttf::SDL2_ttf
   SDL2_mixer::SDL2_mixer
 )
+
+# For windows builds
+add_definitions(-DSDL_MAIN_HANDELED)

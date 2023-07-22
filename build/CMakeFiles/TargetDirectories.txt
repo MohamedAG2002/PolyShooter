@@ -1,3 +1,0 @@
-/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles/ps.dir
-/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles/edit_cache.dir
-/home/mohamed/Dev/C++/SDL/PolyShooter/build/CMakeFiles/rebuild_cache.dir
