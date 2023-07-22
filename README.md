@@ -20,6 +20,7 @@ cd PolyShooter
 mkdir build
 
 cmake -B build
+
 `
 
 After that you can use your favorite IDE to traverse the project and even build it from source if you want.
@@ -35,6 +36,7 @@ cd PolyShooter
 mkdir build
 
 cmake -B build
+
 `
 After that, you have to delete all of the libraries in the **lib** folder which is in the **external** folder and replace them with the libraries you download from all of the above dependencies. You would also have to take the dlls you downloaded(which should be in the **bin** folder for each of the dependencies you downloaded) and put them in the **build** folder which you created. Once you've done all of that, you can just build the project with `cmake --build build` which will have to be run in the project directory, not in the **build** folder.
 
