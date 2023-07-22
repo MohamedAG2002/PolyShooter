@@ -1,16 +1,16 @@
-cmake_minimum_required(VERSION 3.22.1)
+cmake_minimum_required(VERSION 3.27.0)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON) # For the LSP
 
-project(ps)
+project(ps VERSION 1.0)
 
 # Directing cmake to where all the libraries are
 set(CMAKE_PREFIX_PATH ${CMAKE_SOURCE_DIR}/external/)
 
 find_package(SDL2 REQUIRED)
-find_package(SDL2_image REQUIRED)
 find_package(SDL2_ttf REQUIRED)
+find_package(SDL2_image REQUIRED)
 find_package(SDL2_mixer REQUIRED)
 
 set(SOURCES
@@ -58,7 +58,7 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 file(COPY assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
 # Adding the include for the above libraries
-target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/external/include)
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/external/include)
 
 # Adding the libraries to the project
 target_link_libraries(${PROJECT_NAME} 

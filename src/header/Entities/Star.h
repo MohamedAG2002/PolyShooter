@@ -4,7 +4,7 @@
 #include "../Core/Vec2.h"
 #include "../Core/Color.h"
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 namespace ps { // beginning of ps
 

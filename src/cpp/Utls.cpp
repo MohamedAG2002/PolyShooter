@@ -1,12 +1,12 @@
 #include "../header/Utls.h"
 #include "../header/Constants.h"
 
-#include <SDL_events.h>
-#include <SDL_keyboard.h>
-#include <SDL_pixels.h>
-#include <SDL_rect.h>
-#include <SDL_scancode.h>
-#include <SDL_stdinc.h>
+#include <SDL2/SDL_events.h>
+#include <SDL2/SDL_keyboard.h>
+#include <SDL2/SDL_pixels.h>
+#include <SDL2/SDL_rect.h>
+#include <SDL2/SDL_scancode.h>
+#include <SDL2/SDL_stdinc.h>
 
 #include <fstream>
 #include <iostream>

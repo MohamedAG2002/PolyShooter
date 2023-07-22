@@ -1,10 +1,10 @@
 #pragma once
 
 #include "Core/Color.h"
-#include <SDL_events.h>
-#include <SDL_pixels.h>
-#include <SDL_scancode.h>
-#include <SDL_rect.h>
+#include <SDL2/SDL_events.h>
+#include <SDL2/SDL_pixels.h>
+#include <SDL2/SDL_scancode.h>
+#include <SDL2/SDL_rect.h>
 #include <cstdint>
 
 namespace ps { // beginning of ps

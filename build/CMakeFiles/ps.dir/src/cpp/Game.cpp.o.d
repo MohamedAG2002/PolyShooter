@@ -379,12 +379,10 @@ CMakeFiles/ps.dir/src/cpp/Game.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Entities/Star.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Entities/Entity.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Entities/../Core/Color.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Constants.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Managers/AssetManager.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_ttf.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_image.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL_mixer.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc

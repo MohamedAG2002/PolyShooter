@@ -2,9 +2,8 @@
 
 int main(int argc, char* argv[])
 {
-  ps::Game* game = new ps::Game();
-  game->Run(); 
-  delete game;
+  ps::Game game;
+  game.Run();  
 
   return 0;
 }

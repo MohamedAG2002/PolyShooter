@@ -378,5 +378,4 @@ CMakeFiles/ps.dir/src/cpp/main.cpp.o: \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Core/Vec2.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Entities/Star.h \
  /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Entities/Entity.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Entities/../Core/Color.h \
- /home/mohamed/Dev/C++/SDL/PolyShooter/external/include/SDL2/SDL.h
+ /home/mohamed/Dev/C++/SDL/PolyShooter/src/cpp/../header/Entities/../Core/Color.h
