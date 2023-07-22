@@ -12,26 +12,30 @@ The project uses cmake as the build system. You would have to install it and con
 ## Linux:
 For linux, you can do:
 
-`git clone --recursive https://github.com/MohamedAG2002/PolyShooter.git
+~~~
+git clone --recursive https://github.com/MohamedAG2002/PolyShooter.git
 
 cd PolyShooter
 
 mkdir build
 
-cmake -B build`
+cmake -B build
+~~~
 
 After that you can use your favorite IDE to traverse the project and even build it from source if you want.
 
 ## Windows
 For windows, things are a little bit different. You need to download the binaries for SDL2, SDL2_image, SDL2_ttf, and SDL2_mixer. You can go to the github page for each one, go to the release section, and download the binaries for windows x64. Then, you can do: 
 
-`git clone --recursive https://github.com/MohamedAG2002/PolyShooter.git
+~~~
+git clone --recursive https://github.com/MohamedAG2002/PolyShooter.git
 
 cd PolyShooter
 
 mkdir build
 
-cmake -B build`
+cmake -B build
+~~~
 
 After that, you have to delete all of the libraries in the **lib** folder which is in the **external** folder and replace them with the libraries you download from all of the above dependencies. You would also have to take the dlls you downloaded(which should be in the **bin** folder for each of the dependencies you downloaded) and put them in the **build** folder which you created. Once you've done all of that, you can just build the project with `cmake --build build` which will have to be run in the project directory, not in the **build** folder.
 
