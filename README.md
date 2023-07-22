@@ -13,6 +13,7 @@ The project uses cmake as the build system. You would have to install it and con
 For linux, you can do:
 
 `
+
 git clone --recursive https://github.com/MohamedAG2002/PolyShooter.git
 
 cd PolyShooter
@@ -29,6 +30,7 @@ After that you can use your favorite IDE to traverse the project and even build 
 For windows, things are a little bit different. You need to download the binaries for SDL2, SDL2_image, SDL2_ttf, and SDL2_mixer. You can go to the github page for each one, go to the release section, and download the binaries for windows x64. Then, you can do: 
 
 `
+
 git clone --recursive https://github.com/MohamedAG2002/PolyShooter.git
 
 cd PolyShooter
